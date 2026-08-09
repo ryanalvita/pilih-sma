@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import SubmitDataForm from "../components/SubmitDataForm.astro";
+---
+
+<Layout
+  title="Kontribusi Data"
+  description="Bantu lengkapi data SNBP sekolahmu."
+  canonicalURL="/submit"
+>
+  <Header />
+  <main id="main-content" role="main" class="max-w-2xl mx-auto px-4 py-10">
+    <a href="/" class="text-sm text-gray-500 hover:text-amber-700"
+      >← Beranda</a
+    >
+
+    <header class="mt-4 mb-8">
+      <p
+        class="font-mono text-xs uppercase tracking-widest text-amber-700 mb-2"
+      >
+        Kontribusi Data
+      </p>
+      <h1 class="text-3xl font-bold text-gray-900 tracking-tight">
+        Bantu lengkapi data ini
+      </h1>
+      <p class="mt-4 text-gray-600 leading-relaxed">
+        Data di website ini masih banyak belum lengkap, baik dari sisi data penerimaan SNBP
+        per sekolah, per tahun, atau pun per daerah dari luar Kota Bandung. 
+        Kalau kamu punya data dan sumber pengumuman SNBP dari sebuah sekolah, 
+        kirimkan lewat formulir di bawah. Setiap kiriman akan ditinjau manual 
+        terlebih dulu sebelum ditambahkan ke data, supaya angkanya tetap bisa 
+        dipertanggungjawabkan.
+      </p>
+    </header>
+
+    <SubmitDataForm />
+  </main>
+  <Footer />
+</Layout>
