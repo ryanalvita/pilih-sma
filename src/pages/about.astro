@@ -1,0 +1,212 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Tentang Data"
+  description="Cerita di balik PilihSMA dan metodologi pengumpulan datanya."
+  canonicalURL="/about"
+>
+  <Header />
+  <main id="main-content" role="main" class="max-w-2xl mx-auto px-4 py-10">
+    <a href="/" class="text-sm text-gray-500 hover:text-amber-700">← Beranda</a>
+
+    <header class="mt-4 mb-8">
+      <p
+        class="font-mono text-xs uppercase tracking-widest text-amber-700 mb-2"
+      >
+        Tentang Data
+      </p>
+      <h1 class="text-3xl font-bold text-gray-900 tracking-tight">
+        Penjelasan tentang data di PilihSMA
+      </h1>
+    </header>
+
+    <p class="text-gray-600 leading-relaxed">
+      Situs ini merekap jumlah siswa yang diterima lewat jalur <strong
+        class="text-gray-900">SNBP</strong
+      > (Seleksi Nasional Berdasarkan Prestasi) dari SMA di Indonesia.
+    </p>
+
+    <dl class="mt-10 divide-y divide-gray-200 border-t border-gray-200">
+      <div class="py-6">
+        <dt class="text-lg font-semibold text-gray-900 mb-2">
+          Kenapa website PilihSMA dibuat?
+        </dt>
+        <dd class="text-gray-600 leading-relaxed">
+          <p>
+            Awalnya website ini dibuat hanya untuk membantu keluarga saya yang
+            sedang bingung memilih SMA di Bandung. Keponakan dan saudara saya
+            ingin tahu sekolah mana yang siswanya paling banyak lolos SNBP ke
+            PTN incaran, tapi datanya tidak tersedia di satu tempat dan sangat
+            berserakan, kebanyakan cuma ada di post Instagram tiap sekolah. Jadi
+            saya kumpulkan datanya jadi satu tabel yang bisa langsung
+            dibandingkan.
+          </p>
+        </dd>
+      </div>
+
+      <div class="py-6">
+        <dt class="text-lg font-semibold text-gray-900 mb-2">
+          Kenapa PilihSMA dibuka jadi website publik?
+        </dt>
+        <dd class="text-gray-600 leading-relaxed">
+          <p>
+            Karena ternyata cukup berguna untuk keluarga saya, saya pikir siswa
+            atau orang tua murid lain mungkin butuh hal yang sama. Jadi saya
+            buka jadi website publik biar bisa dipakai siapa saja, bukan cuma
+            keluarga saya. Selain itu, dengan dibuka ke publik, orang lain juga
+            bisa berkontribusi data yang belum saya masukkan melalui halaman <a
+              href="/submit"
+              class="underline hover:text-amber-700">Kontribusi Data</a
+            >, supaya datanya lebih lengkap dan bermanfaat untuk lebih banyak
+            orang.
+          </p>
+        </dd>
+      </div>
+
+      <div class="py-6">
+        <dt class="text-lg font-semibold text-gray-900 mb-2">
+          Kenapa datanya baru beberapa SMA di Kota Bandung? Apakah akan
+          diperbanyak?
+        </dt>
+        <dd class="text-gray-600 leading-relaxed">
+          <p>
+            Cakupannya baru Kota Bandung murni karena di situ proyeknya dimulai,
+            bukan karena sengaja dibatasi. Harapan saya, website ini bisa
+            berkembang dengan lebih banyak sekolah di Bandung, lebih banyak
+            cakupan tahunnya, atau lebih luas lagi ke kota selain Kota Bandung.
+            Semua itu bergantung pada data yang akan masuk, jadi kalau kamu
+            punya datanya, bantuanmu bisa sangat bermanfaat untuk kita semua.
+          </p>
+        </dd>
+      </div>
+
+      <div class="py-6">
+        <dt class="text-lg font-semibold text-gray-900 mb-2">
+          Bagaimana cara kontribusi data?
+        </dt>
+        <dd class="text-gray-600 leading-relaxed">
+          <p class="mb-2">
+            Kamu bisa berkontribusi data melalui halaman <a
+              href="/submit"
+              class="underline hover:text-amber-700">Kontribusi Data</a
+            >:
+          </p>
+          <ol class="list-decimal pl-5 space-y-2">
+            <li>
+              Kirim data dan menyertakan sumber data yang kamu dapatkan
+              (misalnya: link Instagram sekolah untuk pengumuman jumlah SNBP).
+            </li>
+            <li>
+              Kiriman itu <strong class="text-gray-900"
+                >ditinjau manual dulu</strong
+              >, dicocokkan dengan sumbernya, supaya angkanya tetap bisa
+              dipertanggungjawabkan.
+            </li>
+            <li>
+              Kalau sudah sesuai, datanya ditambahkan ke database dan langsung
+              muncul di halaman sekolah terkait.
+            </li>
+          </ol>
+        </dd>
+      </div>
+
+      <div class="py-6">
+        <dt class="text-lg font-semibold text-gray-900 mb-2">
+          Kenapa fokus ke jumlah lolos SNBP per universitas, bukan nilai UTBK
+          atau jalur lain?
+        </dt>
+        <dd class="text-gray-600 leading-relaxed space-y-3">
+          <p>
+            Ada banyak cara untuk menilai "sekolah mana yang bagus": nilai
+            rata-rata UTBK, jumlah lolos SNBP, jumlah lolos SNBT, dan lainnya.
+            Tidak ada satu angka pun yang bisa mewakili semuanya, dan situs ini
+            juga tidak mengklaim jadi yang paling akurat.
+          </p>
+          <p>
+            Alasan saya memakai jumlah lolos SNBP per universitas cukup praktis,
+            yaitu karena kebanyakan orang yang sedang milih SMA biasanya sudah
+            punya universitas incaran, sehingga yang lebih relevan buat mereka
+            bukan "sekolah ini bagus atau tidak secara umum", tapi "apakah
+            sekolah ini biasanya berhasil meloloskan siswa ke universitas yang
+            saya incar".
+          </p>
+          <p>
+            SNBP juga dipilih dibanding SNBT karena jalurnya lebih terkait ke
+            sekolah asal (nilai rapor dan reputasi sekolah di mata PTN),
+            sementara SNBT lebih dipengaruhi usaha dan kemampuan individu siswa
+            lewat tes (UTBK). Karena itu, angka SNBP menurut saya lebih bisa
+            dipakai sebagai salah satu indikator "kualitas" sekolah dibanding
+            performa tiap siswa secara individu.
+          </p>
+        </dd>
+      </div>
+
+      <div class="py-6">
+        <dt class="text-lg font-semibold text-gray-900 mb-2">
+          Dari mana datanya?
+        </dt>
+        <dd class="text-gray-600 leading-relaxed">
+          <p>
+            Data dikumpulkan secara manual, satu per satu, dari pengumuman resmi
+            tiap sekolah. Kebanyakan lewat post Instagram sekolah, atau dari
+            sumber informasi publik lainnya. Tiap baris data punya link
+            sumbernya masing-masing.
+          </p>
+        </dd>
+      </div>
+
+      <div class="py-6">
+        <dt class="text-lg font-semibold text-gray-900 mb-2">
+          Kenapa ada data yang kosong?
+        </dt>
+        <dd class="text-gray-600 leading-relaxed">
+          <p>
+            Kami sudah mengecek ke Instagram sekolah atau sumber informasi
+            publik lainnya, tapi belum menemukan datanya. Ini yang paling bisa
+            kamu bantu lewat halaman <a
+              href="/submit"
+              class="underline hover:text-amber-700">Kontribusi Data</a
+            >.
+          </p>
+        </dd>
+      </div>
+
+      <div class="py-6">
+        <dt class="text-lg font-semibold text-gray-900 mb-2">
+          Seberapa akurat datanya?
+        </dt>
+        <dd class="text-gray-600 leading-relaxed">
+          <p class="mb-2">
+            Menurut saya, ini cukup akurat untuk jadi gambaran umum dalam
+            memilih SMA jika kita sudah tahu universitas yang menjadi incaran
+            kita. Website ini pun bukan data resmi dari sekolah atau pemerintah.
+            Beberapa catatan terkait datanya:
+          </p>
+          <ul class="list-disc pl-5 space-y-2 mb-3">
+            <li>
+              Beberapa sekolah mengumumkan detail per siswa lewat banyak post
+              terpisah, jadi ada kemungkinan sebagian terlewat saat dihitung
+              manual.
+            </li>
+            <li>
+              Angka total kadang sedikit berbeda dari jumlah rincian per
+              universitas, karena keterbatasan sumber.
+            </li>
+          </ul>
+          <p>
+            Kalau kamu menemukan data yang salah, silakan kirim koreksinya
+            melalui halaman <a
+              href="/submit"
+              class="underline hover:text-amber-700">Kontribusi Data</a
+            > lengkap dengan link sumber.
+          </p>
+        </dd>
+      </div>
+    </dl>
+  </main>
+  <Footer />
+</Layout>
