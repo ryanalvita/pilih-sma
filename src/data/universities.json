@@ -1,0 +1,1021 @@
+[
+  {
+    "name": "Universitas Gadjah Mada",
+    "abbreviation": "UGM",
+    "type": "universitas",
+    "foundedYear": 1949,
+    "province": "Daerah Istimewa Yogyakarta",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Indonesia",
+    "abbreviation": "UI",
+    "type": "universitas",
+    "foundedYear": 1950,
+    "province": "DKI Jakarta",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Sumatera Utara",
+    "abbreviation": "USU",
+    "type": "universitas",
+    "foundedYear": 1952,
+    "province": "Sumatera Utara",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Airlangga",
+    "abbreviation": "UNAIR",
+    "type": "universitas",
+    "foundedYear": 1954,
+    "province": "Jawa Timur",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Hasanuddin",
+    "abbreviation": "UNHAS",
+    "type": "universitas",
+    "foundedYear": 1956,
+    "province": "Sulawesi Selatan",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Andalas",
+    "abbreviation": "UNAND",
+    "type": "universitas",
+    "foundedYear": 1956,
+    "province": "Sumatera Barat",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Padjadjaran",
+    "abbreviation": "UNPAD",
+    "type": "universitas",
+    "foundedYear": 1957,
+    "province": "Jawa Barat",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Diponegoro",
+    "abbreviation": "UNDIP",
+    "type": "universitas",
+    "foundedYear": 1957,
+    "province": "Jawa Tengah",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Sriwijaya",
+    "abbreviation": "UNSRI",
+    "type": "universitas",
+    "foundedYear": 1960,
+    "province": "Sumatera Selatan",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Lambung Mangkurat",
+    "abbreviation": "ULM",
+    "type": "universitas",
+    "foundedYear": 1960,
+    "province": "Kalimantan Selatan",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Syiah Kuala",
+    "abbreviation": "USK",
+    "type": "universitas",
+    "foundedYear": 1961,
+    "province": "Aceh",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Sam Ratulangi",
+    "abbreviation": "UNSRAT",
+    "type": "universitas",
+    "foundedYear": 1961,
+    "province": "Sulawesi Utara",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Udayana",
+    "abbreviation": "UNUD",
+    "type": "universitas",
+    "foundedYear": 1962,
+    "province": "Bali",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Nusa Cendana",
+    "abbreviation": "UNDANA",
+    "type": "universitas",
+    "foundedYear": 1962,
+    "province": "Nusa Tenggara Timur",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Mulawarman",
+    "abbreviation": "UNMUL",
+    "type": "universitas",
+    "foundedYear": 1962,
+    "province": "Kalimantan Timur",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Mataram",
+    "abbreviation": "UNRAM",
+    "type": "universitas",
+    "foundedYear": 1962,
+    "province": "Nusa Tenggara Barat",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Riau",
+    "abbreviation": "UNRI",
+    "type": "universitas",
+    "foundedYear": 1962,
+    "province": "Riau",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Cenderawasih",
+    "abbreviation": "UNCEN",
+    "type": "universitas",
+    "foundedYear": 1962,
+    "province": "Papua",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Universitas Brawijaya",
+    "abbreviation": "UB",
+    "type": "universitas",
+    "foundedYear": 1963,
+    "province": "Jawa Timur",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Jambi",
+    "abbreviation": "UNJA",
+    "type": "universitas",
+    "foundedYear": 1963,
+    "province": "Jambi",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Pattimura",
+    "abbreviation": "UNPATTI",
+    "type": "universitas",
+    "foundedYear": 1955,
+    "province": "Maluku",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Universitas Tanjungpura",
+    "abbreviation": "UNTAN",
+    "type": "universitas",
+    "foundedYear": 1959,
+    "province": "Kalimantan Barat",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Jenderal Soedirman",
+    "abbreviation": "UNSOED",
+    "type": "universitas",
+    "foundedYear": 1963,
+    "province": "Jawa Tengah",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Palangka Raya",
+    "abbreviation": "UPR",
+    "type": "universitas",
+    "foundedYear": 1963,
+    "province": "Kalimantan Tengah",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Universitas Jember",
+    "abbreviation": "UNEJ",
+    "type": "universitas",
+    "foundedYear": 1964,
+    "province": "Jawa Timur",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Lampung",
+    "abbreviation": "UNILA",
+    "type": "universitas",
+    "foundedYear": 1965,
+    "province": "Lampung",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Sebelas Maret",
+    "abbreviation": "UNS",
+    "type": "universitas",
+    "foundedYear": 1976,
+    "province": "Jawa Tengah",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Tadulako",
+    "abbreviation": "UNTAD",
+    "type": "universitas",
+    "foundedYear": 1981,
+    "province": "Sulawesi Tengah",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Halu Oleo",
+    "abbreviation": "UHO",
+    "type": "universitas",
+    "foundedYear": 1981,
+    "province": "Sulawesi Tenggara",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Universitas Bengkulu",
+    "abbreviation": "UNIB",
+    "type": "universitas",
+    "foundedYear": 1982,
+    "province": "Bengkulu",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Terbuka",
+    "abbreviation": "UT",
+    "type": "universitas",
+    "foundedYear": 1984,
+    "province": "Banten",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Negeri Padang",
+    "abbreviation": "UNP",
+    "type": "universitas",
+    "foundedYear": 1954,
+    "province": "Sumatera Barat",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Negeri Malang",
+    "abbreviation": "UM",
+    "type": "universitas",
+    "foundedYear": 1954,
+    "province": "Jawa Timur",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Pendidikan Indonesia",
+    "abbreviation": "UPI",
+    "type": "universitas",
+    "foundedYear": 1954,
+    "province": "Jawa Barat",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Negeri Manado",
+    "abbreviation": "UNIMA",
+    "type": "universitas",
+    "foundedYear": 1955,
+    "province": "Sulawesi Utara",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Negeri Makassar",
+    "abbreviation": "UNM",
+    "type": "universitas",
+    "foundedYear": 1961,
+    "province": "Sulawesi Selatan",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Negeri Jakarta",
+    "abbreviation": "UNJ",
+    "type": "universitas",
+    "foundedYear": 1964,
+    "province": "DKI Jakarta",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Negeri Yogyakarta",
+    "abbreviation": "UNY",
+    "type": "universitas",
+    "foundedYear": 1964,
+    "province": "Daerah Istimewa Yogyakarta",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Negeri Surabaya",
+    "abbreviation": "UNESA",
+    "type": "universitas",
+    "foundedYear": 1964,
+    "province": "Jawa Timur",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Negeri Medan",
+    "abbreviation": "UNIMED",
+    "type": "universitas",
+    "foundedYear": 1963,
+    "province": "Sumatera Utara",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Negeri Semarang",
+    "abbreviation": "UNNES",
+    "type": "universitas",
+    "foundedYear": 1965,
+    "province": "Jawa Tengah",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Sultan Ageng Tirtayasa",
+    "abbreviation": "UNTIRTA",
+    "type": "universitas",
+    "foundedYear": 1981,
+    "province": "Banten",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Trunojoyo Madura",
+    "abbreviation": "UTM",
+    "type": "universitas",
+    "foundedYear": 2001,
+    "province": "Jawa Timur",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Khairun",
+    "abbreviation": "UNKHAIR",
+    "type": "universitas",
+    "foundedYear": 1964,
+    "province": "Maluku Utara",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Universitas Papua",
+    "abbreviation": "UNIPA",
+    "type": "universitas",
+    "foundedYear": 2000,
+    "province": "Papua Barat",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Universitas Malikussaleh",
+    "abbreviation": "UNIMAL",
+    "type": "universitas",
+    "foundedYear": 1969,
+    "province": "Aceh",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Universitas Negeri Gorontalo",
+    "abbreviation": "UNG",
+    "type": "universitas",
+    "foundedYear": 1963,
+    "province": "Gorontalo",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Pendidikan Ganesha",
+    "abbreviation": "UNDIKSHA",
+    "type": "universitas",
+    "foundedYear": 2006,
+    "province": "Bali",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Bangka Belitung",
+    "abbreviation": "UBB",
+    "type": "universitas",
+    "foundedYear": 2006,
+    "province": "Bangka Belitung",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Universitas Borneo Tarakan",
+    "abbreviation": "UBT",
+    "type": "universitas",
+    "foundedYear": 1999,
+    "province": "Kalimantan Utara",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Universitas Musamus Merauke",
+    "abbreviation": "UNMUS",
+    "type": "universitas",
+    "foundedYear": 2010,
+    "province": "Papua Selatan",
+    "accreditation": "Baik"
+  },
+  {
+    "name": "Universitas Maritim Raja Ali Haji",
+    "abbreviation": "UMRAH",
+    "type": "universitas",
+    "foundedYear": 2007,
+    "province": "Kepulauan Riau",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Universitas Samudra",
+    "abbreviation": "UNSAM",
+    "type": "universitas",
+    "foundedYear": 1972,
+    "province": "Aceh",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Universitas Sulawesi Barat",
+    "abbreviation": "UNSULBAR",
+    "type": "universitas",
+    "foundedYear": 2007,
+    "province": "Sulawesi Barat",
+    "accreditation": "Baik"
+  },
+  {
+    "name": "Universitas Sembilanbelas November",
+    "abbreviation": "USN",
+    "type": "universitas",
+    "foundedYear": 1984,
+    "province": "Sulawesi Tenggara",
+    "accreditation": "Baik"
+  },
+  {
+    "name": "Universitas Tidar",
+    "abbreviation": "UNTIDAR",
+    "type": "universitas",
+    "foundedYear": 1979,
+    "province": "Jawa Tengah",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Universitas Siliwangi",
+    "abbreviation": "UNSIL",
+    "type": "universitas",
+    "foundedYear": 1980,
+    "province": "Jawa Barat",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Teuku Umar",
+    "abbreviation": "UTU",
+    "type": "universitas",
+    "foundedYear": 2006,
+    "province": "Aceh",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Universitas Pembangunan Nasional \"Veteran\" Jawa Timur",
+    "abbreviation": "UPNVJT",
+    "type": "universitas",
+    "foundedYear": 1959,
+    "province": "Jawa Timur",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Timor",
+    "abbreviation": "UNIMOR",
+    "type": "universitas",
+    "foundedYear": 2000,
+    "province": "Nusa Tenggara Timur",
+    "accreditation": "Baik"
+  },
+  {
+    "name": "Universitas Pembangunan Nasional \"Veteran\" Jakarta",
+    "abbreviation": "UPNVJ",
+    "type": "universitas",
+    "foundedYear": 1967,
+    "province": "DKI Jakarta",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Universitas Pembangunan Nasional \"Veteran\" Yogyakarta",
+    "abbreviation": "UPNVYK",
+    "type": "universitas",
+    "foundedYear": 1958,
+    "province": "Daerah Istimewa Yogyakarta",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Universitas Singaperbangsa Karawang",
+    "abbreviation": "UNSIKA",
+    "type": "universitas",
+    "foundedYear": 1982,
+    "province": "Jawa Barat",
+    "accreditation": "Baik"
+  },
+
+  {
+    "name": "Institut Teknologi Bandung",
+    "abbreviation": "ITB",
+    "type": "institut",
+    "foundedYear": 1920,
+    "province": "Jawa Barat",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Institut Teknologi Sepuluh Nopember",
+    "abbreviation": "ITS",
+    "type": "institut",
+    "foundedYear": 1957,
+    "province": "Jawa Timur",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Institut Pertanian Bogor",
+    "abbreviation": "IPB",
+    "type": "institut",
+    "foundedYear": 1963,
+    "province": "Jawa Barat",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Institut Seni Indonesia Yogyakarta",
+    "abbreviation": "ISI Yogyakarta",
+    "type": "institut",
+    "foundedYear": 1984,
+    "province": "Daerah Istimewa Yogyakarta",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Institut Seni Indonesia Bali",
+    "abbreviation": "ISI Bali",
+    "type": "institut",
+    "foundedYear": 1967,
+    "province": "Bali",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Institut Seni Indonesia Surakarta",
+    "abbreviation": "ISI Surakarta",
+    "type": "institut",
+    "foundedYear": 1964,
+    "province": "Jawa Tengah",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Institut Seni Indonesia Padang Panjang",
+    "abbreviation": "ISI Padang Panjang",
+    "type": "institut",
+    "foundedYear": 1965,
+    "province": "Sumatera Barat",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Institut Seni Budaya Indonesia Bandung",
+    "abbreviation": "ISBI Bandung",
+    "type": "institut",
+    "foundedYear": 1968,
+    "province": "Jawa Barat",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Institut Seni Budaya Indonesia Aceh",
+    "abbreviation": "ISBI Aceh",
+    "type": "institut",
+    "foundedYear": 2014,
+    "province": "Aceh",
+    "accreditation": "Baik"
+  },
+  {
+    "name": "Institut Seni Budaya Indonesia Tanah Papua",
+    "abbreviation": "ISBI Tanah Papua",
+    "type": "institut",
+    "foundedYear": 2014,
+    "province": "Papua",
+    "accreditation": "Baik"
+  },
+  {
+    "name": "Institut Teknologi Kalimantan",
+    "abbreviation": "ITK",
+    "type": "institut",
+    "foundedYear": 2014,
+    "province": "Kalimantan Timur",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Institut Teknologi Sumatera",
+    "abbreviation": "ITERA",
+    "type": "institut",
+    "foundedYear": 2012,
+    "province": "Lampung",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Institut Teknologi Bacharuddin Jusuf Habibie",
+    "abbreviation": "ITH",
+    "type": "institut",
+    "foundedYear": 2014,
+    "province": "Sulawesi Selatan",
+    "accreditation": "Baik"
+  },
+  {
+    "name": "Institut Seni Budaya Indonesia Kalimantan Timur",
+    "abbreviation": "ISBI Kaltim",
+    "type": "institut",
+    "foundedYear": 2025,
+    "province": "Kalimantan Timur",
+    "accreditation": "Belum terakreditasi"
+  },
+  {
+    "name": "Institut Seni Budaya Indonesia Sulawesi Selatan",
+    "abbreviation": "ISBI Sulsel",
+    "type": "institut",
+    "foundedYear": 2025,
+    "province": "Sulawesi Selatan",
+    "accreditation": "Belum terakreditasi"
+  },
+
+  {
+    "name": "Politeknik Manufaktur Bandung",
+    "abbreviation": "POLMAN",
+    "type": "politeknik",
+    "foundedYear": 1977,
+    "province": "Jawa Barat",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Jakarta",
+    "abbreviation": "PNJ",
+    "type": "politeknik",
+    "foundedYear": 1982,
+    "province": "DKI Jakarta",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Politeknik Negeri Medan",
+    "abbreviation": "POLMED",
+    "type": "politeknik",
+    "foundedYear": 1982,
+    "province": "Sumatera Utara",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Bandung",
+    "abbreviation": "POLBAN",
+    "type": "politeknik",
+    "foundedYear": 1979,
+    "province": "Jawa Barat",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Politeknik Negeri Semarang",
+    "abbreviation": "POLINES",
+    "type": "politeknik",
+    "foundedYear": 1982,
+    "province": "Jawa Tengah",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Politeknik Negeri Sriwijaya",
+    "abbreviation": "POLSRI",
+    "type": "politeknik",
+    "foundedYear": 1982,
+    "province": "Sumatera Selatan",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Lampung",
+    "abbreviation": "POLINELA",
+    "type": "politeknik",
+    "foundedYear": 1984,
+    "province": "Lampung",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Ambon",
+    "abbreviation": "POLNAM",
+    "type": "politeknik",
+    "foundedYear": 1987,
+    "province": "Maluku",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Padang",
+    "abbreviation": "PNP",
+    "type": "politeknik",
+    "foundedYear": 1985,
+    "province": "Sumatera Barat",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Bali",
+    "abbreviation": "PNB",
+    "type": "politeknik",
+    "foundedYear": 1985,
+    "province": "Bali",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Pontianak",
+    "abbreviation": "POLNEP",
+    "type": "politeknik",
+    "foundedYear": 1985,
+    "province": "Kalimantan Barat",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Ujung Pandang",
+    "abbreviation": "PNUP",
+    "type": "politeknik",
+    "foundedYear": 1987,
+    "province": "Sulawesi Selatan",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Manado",
+    "abbreviation": "POLIMDO",
+    "type": "politeknik",
+    "foundedYear": 1987,
+    "province": "Sulawesi Utara",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Perkapalan Negeri Surabaya",
+    "abbreviation": "PPNS",
+    "type": "politeknik",
+    "foundedYear": 1987,
+    "province": "Jawa Timur",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Politeknik Negeri Banjarmasin",
+    "abbreviation": "POLIBAN",
+    "type": "politeknik",
+    "foundedYear": 1987,
+    "province": "Kalimantan Selatan",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Lhokseumawe",
+    "abbreviation": "PNL",
+    "type": "politeknik",
+    "foundedYear": 1985,
+    "province": "Aceh",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Kupang",
+    "abbreviation": "PNK",
+    "type": "politeknik",
+    "foundedYear": 1985,
+    "province": "Nusa Tenggara Timur",
+    "accreditation": "Baik"
+  },
+  {
+    "name": "Politeknik Elektronika Negeri Surabaya",
+    "abbreviation": "PENS",
+    "type": "politeknik",
+    "foundedYear": 1986,
+    "province": "Jawa Timur",
+    "accreditation": "Unggul"
+  },
+  {
+    "name": "Politeknik Negeri Jember",
+    "abbreviation": "POLIJE",
+    "type": "politeknik",
+    "foundedYear": 1988,
+    "province": "Jawa Timur",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Pertanian Negeri Pangkajene Kepulauan",
+    "abbreviation": "PPNP",
+    "type": "politeknik",
+    "foundedYear": 1990,
+    "province": "Sulawesi Selatan",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Pertanian Negeri Kupang",
+    "abbreviation": "PPNK",
+    "type": "politeknik",
+    "foundedYear": 1984,
+    "province": "Nusa Tenggara Timur",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Perikanan Negeri Tual",
+    "abbreviation": "POLIKANT",
+    "type": "politeknik",
+    "foundedYear": 1997,
+    "province": "Maluku",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Malang",
+    "abbreviation": "POLINEMA",
+    "type": "politeknik",
+    "foundedYear": 1979,
+    "province": "Jawa Timur",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Pertanian Negeri Samarinda",
+    "abbreviation": "POLITANI Samarinda",
+    "type": "politeknik",
+    "foundedYear": 1997,
+    "province": "Kalimantan Timur",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Pertanian Negeri Payakumbuh",
+    "abbreviation": "PPNP Payakumbuh",
+    "type": "politeknik",
+    "foundedYear": 1989,
+    "province": "Sumatera Barat",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Samarinda",
+    "abbreviation": "POLNES",
+    "type": "politeknik",
+    "foundedYear": 1985,
+    "province": "Kalimantan Timur",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Media Kreatif",
+    "abbreviation": "POLIMEDIA",
+    "type": "politeknik",
+    "foundedYear": 2008,
+    "province": "DKI Jakarta",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Manufaktur Negeri Bangka Belitung",
+    "abbreviation": "POLMANBABEL",
+    "type": "politeknik",
+    "foundedYear": 2010,
+    "province": "Bangka Belitung",
+    "accreditation": "Baik"
+  },
+  {
+    "name": "Politeknik Negeri Batam",
+    "abbreviation": "POLIBATAM",
+    "type": "politeknik",
+    "foundedYear": 2010,
+    "province": "Kepulauan Riau",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Nusa Utara",
+    "abbreviation": "POLNUSTAR",
+    "type": "politeknik",
+    "foundedYear": 2011,
+    "province": "Sulawesi Utara",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Bengkalis",
+    "abbreviation": "POLBENG",
+    "type": "politeknik",
+    "foundedYear": 2011,
+    "province": "Riau",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Balikpapan",
+    "abbreviation": "POLTEKBA",
+    "type": "politeknik",
+    "foundedYear": 2011,
+    "province": "Kalimantan Timur",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Madura",
+    "abbreviation": "POLTERA",
+    "type": "politeknik",
+    "foundedYear": 2012,
+    "province": "Jawa Timur",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Maritim Negeri Indonesia",
+    "abbreviation": "POLIMARIN",
+    "type": "politeknik",
+    "foundedYear": 2012,
+    "province": "Jawa Tengah",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Banyuwangi",
+    "abbreviation": "POLIWANGI",
+    "type": "politeknik",
+    "foundedYear": 2013,
+    "province": "Jawa Timur",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Madiun",
+    "abbreviation": "PNM",
+    "type": "politeknik",
+    "foundedYear": 2012,
+    "province": "Jawa Timur",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Fakfak",
+    "abbreviation": "POLINEF",
+    "type": "politeknik",
+    "foundedYear": 2012,
+    "province": "Papua Barat",
+    "accreditation": "Baik"
+  },
+  {
+    "name": "Politeknik Negeri Sambas",
+    "abbreviation": "POLTESA",
+    "type": "politeknik",
+    "foundedYear": 2013,
+    "province": "Kalimantan Barat",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Tanah Laut",
+    "abbreviation": "POLITALA",
+    "type": "politeknik",
+    "foundedYear": 2009,
+    "province": "Kalimantan Selatan",
+    "accreditation": "Baik Sekali"
+  },
+  {
+    "name": "Politeknik Negeri Subang",
+    "abbreviation": "POLSUB",
+    "type": "politeknik",
+    "foundedYear": 2014,
+    "province": "Jawa Barat",
+    "accreditation": "Baik"
+  },
+  {
+    "name": "Politeknik Negeri Ketapang",
+    "abbreviation": "POLITAP",
+    "type": "politeknik",
+    "foundedYear": 2008,
+    "province": "Kalimantan Barat",
+    "accreditation": "Baik"
+  },
+  {
+    "name": "Politeknik Negeri Cilacap",
+    "abbreviation": "PNC",
+    "type": "politeknik",
+    "foundedYear": 2008,
+    "province": "Jawa Tengah",
+    "accreditation": "Baik"
+  },
+  {
+    "name": "Politeknik Negeri Indramayu",
+    "abbreviation": "POLINDRA",
+    "type": "politeknik",
+    "foundedYear": 2008,
+    "province": "Jawa Barat",
+    "accreditation": "Baik"
+  },
+  {
+    "name": "Politeknik Negeri Nunukan",
+    "abbreviation": "PNN",
+    "type": "politeknik",
+    "foundedYear": 2020,
+    "province": "Kalimantan Utara",
+    "accreditation": "Baik"
+  },
+
+  {
+    "name": "Akademi Komunitas Negeri Pacitan",
+    "abbreviation": "AKN Pacitan",
+    "type": "akademi-komunitas",
+    "foundedYear": 2013,
+    "province": "Jawa Timur",
+    "accreditation": "Baik"
+  },
+  {
+    "name": "Akademi Komunitas Negeri Putra Sang Fajar Blitar",
+    "abbreviation": "AKB",
+    "type": "akademi-komunitas",
+    "foundedYear": 2014,
+    "province": "Jawa Timur",
+    "accreditation": "Baik"
+  },
+  {
+    "name": "Akademi Komunitas Negeri Aceh Barat",
+    "abbreviation": "AKN Aceh Barat",
+    "type": "akademi-komunitas",
+    "foundedYear": 2014,
+    "province": "Aceh",
+    "accreditation": "Baik"
+  },
+  {
+    "name": "Akademi Komunitas Negeri Rejang Lebong",
+    "abbreviation": "AKREL",
+    "type": "akademi-komunitas",
+    "foundedYear": 2018,
+    "province": "Bengkulu",
+    "accreditation": "Baik"
+  },
+  {
+    "name": "Akademi Komunitas Negeri Seni dan Budaya Yogyakarta",
+    "abbreviation": "AKNSB Yogyakarta",
+    "type": "akademi-komunitas",
+    "foundedYear": 2020,
+    "province": "Daerah Istimewa Yogyakarta",
+    "accreditation": "Belum terakreditasi"
+  }
+]

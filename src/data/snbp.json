@@ -1,0 +1,995 @@
+{
+  "universities": [
+    "ITB",
+    "UNPAD",
+    "POLBAN",
+    "UPI",
+    "UIN SGD",
+    "ITS",
+    "IPB",
+    "ISBI Bandung",
+    "ISI Surakarta",
+    "UNSOED",
+    "UI",
+    "UGM",
+    "UNDIP",
+    "POLMAN",
+    "POLIMARIN",
+    "UNNES",
+    "UNAIR",
+    "UBB",
+    "UNAND",
+    "UPNVJ",
+    "UPNVYK",
+    "UPNVJT",
+    "UB",
+    "UNILA",
+    "POLSUB",
+    "ISI Yogyakarta",
+    "ULM",
+    "UNUD",
+    "Universitas Tarumanegara",
+    "PEM Akamigas",
+    "Poltekkes Bandung",
+    "POLIBATAM",
+    "UNHAS",
+    "UNTIRTA",
+    "UNPATTI",
+    "UIN MALIKI",
+    "UNDIKSHA",
+    "UM",
+    "UNSIKA",
+    "UNESA"
+  ],
+  "schools": [
+    {
+      "name": "SMA Alfa Centauri",
+      "slug": "sma-alfa-centauri",
+      "schoolNumber": null,
+      "type": "swasta"
+    },
+    {
+      "name": "SMA Intelegensia",
+      "slug": "sma-intelegensia",
+      "schoolNumber": null,
+      "type": "swasta"
+    },
+    {
+      "name": "SMA Pasundan 1 Bandung",
+      "slug": "sma-pasundan-1-bandung",
+      "schoolNumber": null,
+      "type": "swasta"
+    },
+    {
+      "name": "SMA Taruna Bakti",
+      "slug": "sma-taruna-bakti",
+      "schoolNumber": null,
+      "type": "swasta"
+    },
+    {
+      "name": "SMAN 1 Bandung",
+      "slug": "sman-1-bandung",
+      "schoolNumber": "1",
+      "type": "negeri"
+    },
+    {
+      "name": "SMAN 11 Bandung",
+      "slug": "sman-11-bandung",
+      "schoolNumber": "11",
+      "type": "negeri"
+    },
+    {
+      "name": "SMAN 12 Bandung",
+      "slug": "sman-12-bandung",
+      "schoolNumber": "12",
+      "type": "negeri"
+    },
+    {
+      "name": "SMAN 19 Bandung",
+      "slug": "sman-19-bandung",
+      "schoolNumber": "19",
+      "type": "negeri"
+    },
+    {
+      "name": "SMAN 2 Bandung",
+      "slug": "sman-2-bandung",
+      "schoolNumber": "2",
+      "type": "negeri"
+    },
+    {
+      "name": "SMAN 20 Bandung",
+      "slug": "sman-20-bandung",
+      "schoolNumber": "20",
+      "type": "negeri"
+    },
+    {
+      "name": "SMAN 22 Bandung",
+      "slug": "sman-22-bandung",
+      "schoolNumber": "22",
+      "type": "negeri"
+    },
+    {
+      "name": "SMAN 24 Bandung",
+      "slug": "sman-24-bandung",
+      "schoolNumber": "24",
+      "type": "negeri"
+    },
+    {
+      "name": "SMAN 3 Bandung",
+      "slug": "sman-3-bandung",
+      "schoolNumber": "3",
+      "type": "negeri"
+    },
+    {
+      "name": "SMAN 4 Bandung",
+      "slug": "sman-4-bandung",
+      "schoolNumber": "4",
+      "type": "negeri"
+    },
+    {
+      "name": "SMAN 5 Bandung",
+      "slug": "sman-5-bandung",
+      "schoolNumber": "5",
+      "type": "negeri"
+    },
+    {
+      "name": "SMAN 8 Bandung",
+      "slug": "sman-8-bandung",
+      "schoolNumber": "8",
+      "type": "negeri"
+    }
+  ],
+  "records": [
+    {
+      "school": "SMAN 1 Bandung",
+      "schoolNumber": "1",
+      "year": 2026,
+      "track": "SNBP",
+      "accepted": 48,
+      "universities": {
+        "ITB": 6,
+        "UNPAD": 14,
+        "POLBAN": 15,
+        "UPI": 5,
+        "UIN SGD": 1,
+        "IPB": 5,
+        "UGM": 1,
+        "POLMAN": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DWmJUFSiZEH/",
+      "note": null
+    },
+    {
+      "school": "SMAN 1 Bandung",
+      "schoolNumber": "1",
+      "year": 2025,
+      "track": "SNBP",
+      "accepted": 62,
+      "universities": {
+        "ITB": 15,
+        "UNPAD": 14,
+        "POLBAN": 10,
+        "UPI": 5,
+        "UIN SGD": 1,
+        "IPB": 17,
+        "ISI Yogyakarta": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://smile.sman1bdg.sch.id/sidikti/hasil-pendataan/",
+      "note": "Total per sekolah (27 SMAN), belum per-ITB"
+    },
+    {
+      "school": "SMAN 1 Bandung",
+      "schoolNumber": "1",
+      "year": 2024,
+      "track": "SNBP",
+      "accepted": 57,
+      "universities": {
+        "ITB": 12,
+        "UNPAD": 20,
+        "POLBAN": 6,
+        "UPI": 4,
+        "IPB": 12,
+        "UNSOED": 1,
+        "POLMAN": 1,
+        "ISI Yogyakarta": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://smile.sman1bdg.sch.id/sidikti/hasil-pendataan/",
+      "note": null
+    },
+    {
+      "school": "SMAN 2 Bandung",
+      "schoolNumber": "2",
+      "year": 2026,
+      "track": "SNBP",
+      "accepted": 31,
+      "universities": {
+        "ITB": 13,
+        "UNPAD": 9,
+        "POLBAN": 3,
+        "UPI": 5,
+        "IPB": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DWls9fbk9az/",
+      "note": null
+    },
+    {
+      "school": "SMAN 2 Bandung",
+      "schoolNumber": "2",
+      "year": 2025,
+      "track": "SNBP",
+      "accepted": 50,
+      "universities": {
+        "ITB": 21,
+        "UNPAD": 19,
+        "UPI": 5,
+        "IPB": 2,
+        "UNAIR": 1,
+        "UNUD": 1,
+        "UNESA": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DKZQOD_yv56/?img_index=1",
+      "note": null
+    },
+    {
+      "school": "SMAN 2 Bandung",
+      "schoolNumber": "2",
+      "year": 2024,
+      "track": "SNBP",
+      "accepted": 52,
+      "universities": {
+        "ITB": 28,
+        "UNPAD": 7,
+        "POLBAN": 6,
+        "UPI": 5,
+        "IPB": 4,
+        "ISBI Bandung": 2
+      },
+      "hasBreakdown": true,
+      "source": null,
+      "note": "Each per student?"
+    },
+    {
+      "school": "SMAN 3 Bandung",
+      "schoolNumber": "3",
+      "year": 2026,
+      "track": "SNBP",
+      "accepted": 36,
+      "universities": {
+        "ITB": 24,
+        "UNPAD": 8,
+        "UPI": 1,
+        "IPB": 3
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DWyWkHhEiFk/?hl=id",
+      "note": null
+    },
+    {
+      "school": "SMAN 3 Bandung",
+      "schoolNumber": "3",
+      "year": 2025,
+      "track": "SNBP",
+      "accepted": 54,
+      "universities": {
+        "ITB": 35,
+        "UNPAD": 8,
+        "UPI": 1,
+        "IPB": 5,
+        "UBB": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DH0r-q9pUGs/?hl=id&img_index=3",
+      "note": "Each per student?"
+    },
+    {
+      "school": "SMAN 3 Bandung",
+      "schoolNumber": "3",
+      "year": 2024,
+      "track": "SNBP",
+      "accepted": 69,
+      "universities": {
+        "ITB": 49,
+        "UNPAD": 11,
+        "POLBAN": 1,
+        "UPI": 1,
+        "ITS": 1,
+        "IPB": 3,
+        "UI": 1,
+        "UNAND": 1,
+        "UPNVJ": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/C5SBL_5JPql/?hl=id&img_index=1",
+      "note": "Tertinggi se-Bandung untuk ITB 2024"
+    },
+    {
+      "school": "SMAN 4 Bandung",
+      "schoolNumber": "4",
+      "year": 2026,
+      "track": "SNBP",
+      "accepted": 34,
+      "universities": {
+        "ITB": 3,
+        "UNPAD": 15,
+        "POLBAN": 2,
+        "UPI": 6,
+        "UIN SGD": 3,
+        "IPB": 2,
+        "ISBI Bandung": 1,
+        "POLMAN": 1,
+        "UNUD": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DWl1jjfAcKr/",
+      "note": null
+    },
+    {
+      "school": "SMAN 4 Bandung",
+      "schoolNumber": "4",
+      "year": 2025,
+      "track": "SNBP",
+      "accepted": 51,
+      "universities": {
+        "ITB": 7,
+        "UNPAD": 30,
+        "POLBAN": 6,
+        "UPI": 5,
+        "IPB": 2,
+        "POLMAN": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DHXbkfyyk2g/?img_index=2",
+      "note": null
+    },
+    {
+      "school": "SMAN 4 Bandung",
+      "schoolNumber": "4",
+      "year": 2024,
+      "track": "SNBP",
+      "accepted": 53,
+      "universities": {
+        "ITB": 9,
+        "UNPAD": 10,
+        "POLBAN": 31,
+        "UPI": 1,
+        "IPB": 1,
+        "POLMAN": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/C6c2XKVS_d5/",
+      "note": "Each per student"
+    },
+    {
+      "school": "SMAN 5 Bandung",
+      "schoolNumber": "5",
+      "year": 2026,
+      "track": "SNBP",
+      "accepted": 35,
+      "universities": {
+        "ITB": 12,
+        "UNPAD": 11,
+        "POLBAN": 4,
+        "UPI": 5,
+        "IPB": 1,
+        "UGM": 1,
+        "ULM": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DWnuqBikU1E/",
+      "note": null
+    },
+    {
+      "school": "SMAN 5 Bandung",
+      "schoolNumber": "5",
+      "year": 2025,
+      "track": "SNBP",
+      "accepted": 50,
+      "universities": {
+        "ITB": 20,
+        "UNPAD": 13,
+        "POLBAN": 4,
+        "UPI": 3,
+        "IPB": 7,
+        "UI": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DJPN6P-T5TS/",
+      "note": "Each per student?"
+    },
+    {
+      "school": "SMAN 5 Bandung",
+      "schoolNumber": "5",
+      "year": 2024,
+      "track": "SNBP",
+      "accepted": 55,
+      "universities": {
+        "ITB": 27,
+        "UNPAD": 15,
+        "POLBAN": 1,
+        "UPI": 5,
+        "IPB": 6,
+        "POLMAN": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DJPN6P-T5TS/",
+      "note": "Each per student?"
+    },
+    {
+      "school": "SMAN 8 Bandung",
+      "schoolNumber": "8",
+      "year": 2026,
+      "track": "SNBP",
+      "accepted": 33,
+      "universities": {},
+      "hasBreakdown": false,
+      "source": null,
+      "note": "Data tidak tersedia di IG"
+    },
+    {
+      "school": "SMAN 8 Bandung",
+      "schoolNumber": "8",
+      "year": 2025,
+      "track": "SNBP",
+      "accepted": 40,
+      "universities": {},
+      "hasBreakdown": false,
+      "source": null,
+      "note": "Data tidak tersedia di IG"
+    },
+    {
+      "school": "SMAN 8 Bandung",
+      "schoolNumber": "8",
+      "year": 2024,
+      "track": "SNBP",
+      "accepted": 60,
+      "universities": {
+        "ITB": 34,
+        "UNPAD": 8,
+        "POLBAN": 8,
+        "UPI": 5,
+        "ITS": 1,
+        "IPB": 1,
+        "UGM": 1,
+        "UNDIP": 1,
+        "UNNES": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/C5P5TKEBHz-/?img_index=1",
+      "note": null
+    },
+    {
+      "school": "SMAN 11 Bandung",
+      "schoolNumber": "11",
+      "year": 2026,
+      "track": "SNBP",
+      "accepted": 37,
+      "universities": {
+        "ITB": 5,
+        "UNPAD": 18,
+        "POLBAN": 6,
+        "UPI": 5,
+        "UIN SGD": 1,
+        "IPB": 1,
+        "ISBI Bandung": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DWk6dXqkYnM/?hl=id",
+      "note": null
+    },
+    {
+      "school": "SMAN 11 Bandung",
+      "schoolNumber": "11",
+      "year": 2025,
+      "track": "SNBP",
+      "accepted": 40,
+      "universities": {
+        "ITB": 8,
+        "UNPAD": 19,
+        "POLBAN": 4,
+        "UPI": 5,
+        "IPB": 1,
+        "UI": 1,
+        "UNDIP": 1,
+        "POLIBATAM": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DHYlQG2B_IW/?hl=id",
+      "note": null
+    },
+    {
+      "school": "SMAN 11 Bandung",
+      "schoolNumber": "11",
+      "year": 2024,
+      "track": "SNBP",
+      "accepted": 45,
+      "universities": {
+        "ITB": 9,
+        "UNPAD": 19,
+        "POLBAN": 6,
+        "UPI": 5,
+        "IPB": 2,
+        "ISBI Bandung": 1,
+        "UI": 1,
+        "POLMAN": 1,
+        "ISI Yogyakarta": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/C5Ivf0xSCfl/?hl=id",
+      "note": null
+    },
+    {
+      "school": "SMAN 12 Bandung",
+      "schoolNumber": "12",
+      "year": 2026,
+      "track": "SNBP",
+      "accepted": 61,
+      "universities": {
+        "ITB": 4,
+        "UNPAD": 29,
+        "POLBAN": 16,
+        "UPI": 5,
+        "UIN SGD": 2,
+        "IPB": 2,
+        "UNSOED": 2,
+        "UGM": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DWjELDhAXSc/?hl=en",
+      "note": null
+    },
+    {
+      "school": "SMAN 12 Bandung",
+      "schoolNumber": "12",
+      "year": 2025,
+      "track": "SNBP",
+      "accepted": 56,
+      "universities": {
+        "ITB": 6,
+        "UNPAD": 19,
+        "POLBAN": 14,
+        "UPI": 4,
+        "UIN SGD": 3,
+        "IPB": 1,
+        "UNSOED": 1,
+        "UGM": 1,
+        "POLMAN": 1,
+        "UPNVYK": 1,
+        "ULM": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DHkpT0Axc19/",
+      "note": "Tidak ada overview poster instagram, diambil satu satu dari masing-masing post per siswa"
+    },
+    {
+      "school": "SMAN 12 Bandung",
+      "schoolNumber": "12",
+      "year": 2024,
+      "track": "SNBP",
+      "accepted": 51,
+      "universities": {
+        "ITB": 9,
+        "UNPAD": 21,
+        "POLBAN": 11,
+        "UPI": 6,
+        "UIN SGD": 1,
+        "IPB": 1,
+        "ISBI Bandung": 1,
+        "UPNVYK": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.koreksinews.co.id/berita/51-siswa-sman-12-bandung-lolos-snbp/",
+      "note": null
+    },
+    {
+      "school": "SMAN 19 Bandung",
+      "schoolNumber": "19",
+      "year": 2026,
+      "track": "SNBP",
+      "accepted": 34,
+      "universities": {
+        "UNPAD": 11,
+        "POLBAN": 5,
+        "UPI": 6,
+        "UIN SGD": 1,
+        "IPB": 3,
+        "UNSOED": 1,
+        "POLMAN": 3,
+        "UB": 1,
+        "POLSUB": 1,
+        "UM": 1,
+        "UNSIKA": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DWnjHvUkuFA/?img_index=1",
+      "note": null
+    },
+    {
+      "school": "SMAN 19 Bandung",
+      "schoolNumber": "19",
+      "year": 2025,
+      "track": "SNBP",
+      "accepted": 36,
+      "universities": {
+        "ITB": 4,
+        "UNPAD": 10,
+        "UPI": 5,
+        "UIN SGD": 1,
+        "IPB": 6,
+        "ISI Surakarta": 1,
+        "POLMAN": 6,
+        "POLIMARIN": 2,
+        "POLSUB": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DHcedt2JOiA/?img_index=2",
+      "note": null
+    },
+    {
+      "school": "SMAN 19 Bandung",
+      "schoolNumber": "19",
+      "year": 2024,
+      "track": "SNBP",
+      "accepted": 21,
+      "universities": {
+        "ITB": 2,
+        "UNPAD": 3,
+        "POLBAN": 2,
+        "UPI": 2,
+        "UIN SGD": 1,
+        "IPB": 5,
+        "ISBI Bandung": 1,
+        "POLMAN": 3,
+        "POLIMARIN": 1,
+        "POLSUB": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/C5GJCHfho7W/",
+      "note": null
+    },
+    {
+      "school": "SMAN 20 Bandung",
+      "schoolNumber": "20",
+      "year": 2026,
+      "track": "SNBP",
+      "accepted": 38,
+      "universities": {
+        "ITB": 6,
+        "UNPAD": 19,
+        "POLBAN": 6,
+        "UPI": 5,
+        "UIN SGD": 2
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DWlLu06El2O/",
+      "note": null
+    },
+    {
+      "school": "SMAN 20 Bandung",
+      "schoolNumber": "20",
+      "year": 2025,
+      "track": "SNBP",
+      "accepted": null,
+      "universities": {},
+      "hasBreakdown": false,
+      "source": null,
+      "note": "Sudah di cek, tidak ada data 2025 di Instagram"
+    },
+    {
+      "school": "SMAN 20 Bandung",
+      "schoolNumber": "20",
+      "year": 2024,
+      "track": "SNBP",
+      "accepted": 44,
+      "universities": {
+        "ITB": 6,
+        "UNPAD": 24,
+        "POLBAN": 2,
+        "UPI": 6,
+        "IPB": 1,
+        "ISBI Bandung": 1,
+        "Poltekkes Bandung": 3,
+        "UNHAS": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/C5HxDwtJbFu/",
+      "note": null
+    },
+    {
+      "school": "SMAN 22 Bandung",
+      "schoolNumber": "22",
+      "year": 2026,
+      "track": "SNBP",
+      "accepted": 53,
+      "universities": {
+        "ITB": 4,
+        "UNPAD": 33,
+        "POLBAN": 4,
+        "UPI": 5,
+        "UIN SGD": 5,
+        "IPB": 2
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DWnQJguEeUd/?img_index=1",
+      "note": null
+    },
+    {
+      "school": "SMAN 22 Bandung",
+      "schoolNumber": "22",
+      "year": 2025,
+      "track": "SNBP",
+      "accepted": 37,
+      "universities": {
+        "ITB": 4,
+        "UNPAD": 24,
+        "POLBAN": 2,
+        "UPI": 5,
+        "IPB": 2
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DHtGMbKTqQF/?img_index=1",
+      "note": null
+    },
+    {
+      "school": "SMAN 22 Bandung",
+      "schoolNumber": "22",
+      "year": 2024,
+      "track": "SNBP",
+      "accepted": 43,
+      "universities": {
+        "ITB": 7,
+        "UNPAD": 23,
+        "POLBAN": 5,
+        "UPI": 5,
+        "IPB": 2,
+        "UNSOED": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/C7Lf7rsyite/?img_index=1",
+      "note": null
+    },
+    {
+      "school": "SMAN 24 Bandung",
+      "schoolNumber": "24",
+      "year": 2026,
+      "track": "SNBP",
+      "accepted": 39,
+      "universities": {
+        "ITB": 7,
+        "UNPAD": 17,
+        "POLBAN": 4,
+        "UPI": 5,
+        "UIN SGD": 1,
+        "ITS": 1,
+        "IPB": 2,
+        "UGM": 1,
+        "PEM Akamigas": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DWnhRpngZY-/",
+      "note": null
+    },
+    {
+      "school": "SMAN 24 Bandung",
+      "schoolNumber": "24",
+      "year": 2025,
+      "track": "SNBP",
+      "accepted": 66,
+      "universities": {
+        "ITB": 11,
+        "UNPAD": 40,
+        "POLBAN": 6,
+        "UPI": 5,
+        "ITS": 1,
+        "IPB": 1,
+        "POLMAN": 1,
+        "ISI Yogyakarta": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DNkjBmUzQqI/",
+      "note": "Total tertinggi 2025"
+    },
+    {
+      "school": "SMAN 24 Bandung",
+      "schoolNumber": "24",
+      "year": 2024,
+      "track": "SNBP",
+      "accepted": 44,
+      "universities": {
+        "ITB": 10,
+        "UNPAD": 12,
+        "POLBAN": 15,
+        "UPI": 5,
+        "ISBI Bandung": 1,
+        "POLMAN": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/C6Bzf5iRpxw/",
+      "note": null
+    },
+    {
+      "school": "SMA Taruna Bakti",
+      "schoolNumber": null,
+      "year": 2026,
+      "track": "SNBP",
+      "accepted": 21,
+      "universities": {
+        "ITB": 16,
+        "UNPAD": 5
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DWm3EQJEw_D/",
+      "note": null
+    },
+    {
+      "school": "SMA Alfa Centauri",
+      "schoolNumber": null,
+      "year": 2026,
+      "track": "SNBP",
+      "accepted": 27,
+      "universities": {
+        "ITB": 14,
+        "UNPAD": 9,
+        "POLBAN": 1,
+        "UPI": 1,
+        "IPB": 1,
+        "UGM": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DWlODvxFDBW/?img_index=1",
+      "note": null
+    },
+    {
+      "school": "SMA Pasundan 1 Bandung",
+      "schoolNumber": null,
+      "year": 2026,
+      "track": "SNBP",
+      "accepted": 30,
+      "universities": {
+        "UNPAD": 14,
+        "POLBAN": 6,
+        "UPI": 5,
+        "ITS": 1,
+        "UI": 2,
+        "UNAIR": 1,
+        "UPNVJ": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DWok3XkiSUZ/?img_index=1",
+      "note": null
+    },
+    {
+      "school": "SMA Intelegensia",
+      "schoolNumber": null,
+      "year": 2026,
+      "track": "SNBP",
+      "accepted": null,
+      "universities": {},
+      "hasBreakdown": false,
+      "source": null,
+      "note": "Tidak ada data di IG"
+    },
+    {
+      "school": "SMA Taruna Bakti",
+      "schoolNumber": null,
+      "year": 2025,
+      "track": "SNBP",
+      "accepted": 41,
+      "universities": {
+        "ITB": 31,
+        "UNPAD": 9,
+        "ITS": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DHW-4G6TbvU/",
+      "note": null
+    },
+    {
+      "school": "SMA Alfa Centauri",
+      "schoolNumber": null,
+      "year": 2025,
+      "track": "SNBP",
+      "accepted": 26,
+      "universities": {
+        "ITB": 16,
+        "UNPAD": 5,
+        "UPI": 2,
+        "IPB": 1,
+        "ISBI Bandung": 1,
+        "UGM": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DHbV_AkPqC-/",
+      "note": null
+    },
+    {
+      "school": "SMA Pasundan 1 Bandung",
+      "schoolNumber": null,
+      "year": 2025,
+      "track": "SNBP",
+      "accepted": 32,
+      "universities": {
+        "UNPAD": 24,
+        "POLBAN": 1,
+        "UPI": 5,
+        "UIN SGD": 1,
+        "UI": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/DHZWWUkTJNu/?img_index=1",
+      "note": null
+    },
+    {
+      "school": "SMA Intelegensia",
+      "schoolNumber": null,
+      "year": 2025,
+      "track": "SNBP",
+      "accepted": null,
+      "universities": {},
+      "hasBreakdown": false,
+      "source": null,
+      "note": "Tidak ada data di IG"
+    },
+    {
+      "school": "SMA Alfa Centauri",
+      "schoolNumber": null,
+      "year": 2024,
+      "track": "SNBP",
+      "accepted": 35,
+      "universities": {
+        "ITB": 13,
+        "UNPAD": 17,
+        "POLBAN": 1,
+        "UPI": 2,
+        "UGM": 1,
+        "UB": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/C4-TCW3PL5f/",
+      "note": null
+    },
+    {
+      "school": "SMA Pasundan 1 Bandung",
+      "schoolNumber": null,
+      "year": 2024,
+      "track": "SNBP",
+      "accepted": null,
+      "universities": {
+        "UNPAD": 15,
+        "POLBAN": 1,
+        "UPI": 5,
+        "UI": 1,
+        "UPNVYK": 1
+      },
+      "hasBreakdown": true,
+      "source": "https://www.instagram.com/p/C5ASvSMSyny/?img_index=4",
+      "note": null
+    },
+    {
+      "school": "SMA Intelegensia",
+      "schoolNumber": null,
+      "year": 2024,
+      "track": "SNBP",
+      "accepted": null,
+      "universities": {},
+      "hasBreakdown": false,
+      "source": null,
+      "note": "Tidak ada data di IG"
+    },
+    {
+      "school": "SMA Taruna Bakti",
+      "schoolNumber": null,
+      "year": 2024,
+      "track": "SNBP",
+      "accepted": null,
+      "universities": {},
+      "hasBreakdown": false,
+      "source": null,
+      "note": "Tidak ada data, sudah di cek"
+    }
+  ]
+}

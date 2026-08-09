@@ -1,0 +1,390 @@
+[
+  {
+    "rank": 1,
+    "name": "Universitas Indonesia"
+  },
+  {
+    "rank": 2,
+    "name": "Institut Teknologi Bandung"
+  },
+  {
+    "rank": 3,
+    "name": "Universitas Gadjah Mada"
+  },
+  {
+    "rank": 4,
+    "name": "Institut Pertanian Bogor"
+  },
+  {
+    "rank": 5,
+    "name": "Institut Teknologi Sepuluh Nopember"
+  },
+  {
+    "rank": 6,
+    "name": "Universitas Airlangga"
+  },
+  {
+    "rank": 7,
+    "name": "Universitas Diponegoro"
+  },
+  {
+    "rank": 8,
+    "name": "Universitas Brawijaya"
+  },
+  {
+    "rank": 9,
+    "name": "Universitas Hasanuddin"
+  },
+  {
+    "rank": 10,
+    "name": "Universitas Sebelas Maret"
+  },
+  {
+    "rank": 11,
+    "name": "Universitas Padjadjaran"
+  },
+  {
+    "rank": 12,
+    "name": "Universitas Pendidikan Indonesia"
+  },
+  {
+    "rank": 13,
+    "name": "Universitas Syiah Kuala"
+  },
+  {
+    "rank": 14,
+    "name": "Universitas Andalas"
+  },
+  {
+    "rank": 15,
+    "name": "Universitas Negeri Yogyakarta"
+  },
+  {
+    "rank": 16,
+    "name": "Telkom University"
+  },
+  {
+    "rank": 17,
+    "name": "Universitas Negeri Malang"
+  },
+  {
+    "rank": 18,
+    "name": "Universitas Negeri Semarang"
+  },
+  {
+    "rank": 19,
+    "name": "Universitas Sriwijaya"
+  },
+  {
+    "rank": 20,
+    "name": "Universitas Negeri Surabaya"
+  },
+  {
+    "rank": 21,
+    "name": "Universitas Islam Indonesia"
+  },
+  {
+    "rank": 22,
+    "name": "Universitas Muhammadiyah Yogyakarta"
+  },
+  {
+    "rank": 23,
+    "name": "Universitas Sam Ratulangi"
+  },
+  {
+    "rank": 24,
+    "name": "Universitas Sumatera Utara"
+  },
+  {
+    "rank": 25,
+    "name": "Universitas Lampung"
+  },
+  {
+    "rank": 26,
+    "name": "Universitas Riau"
+  },
+  {
+    "rank": 27,
+    "name": "Universitas Udayana"
+  },
+  {
+    "rank": 28,
+    "name": "Universitas Tangjungpura"
+  },
+  {
+    "rank": 29,
+    "name": "Universitas Negeri Padang"
+  },
+  {
+    "rank": 30,
+    "name": "Universitas Negeri Makassar"
+  },
+  {
+    "rank": 31,
+    "name": "Universitas Mulawarman"
+  },
+  {
+    "rank": 32,
+    "name": "Universitas Jember"
+  },
+  {
+    "rank": 33,
+    "name": "Universitas Malikussaleh"
+  },
+  {
+    "rank": 34,
+    "name": "Universitas Mataram"
+  },
+  {
+    "rank": 35,
+    "name": "Universitas Palangka Raya"
+  },
+  {
+    "rank": 36,
+    "name": "Binus University"
+  },
+  {
+    "rank": 37,
+    "name": "Universitas Pattimura"
+  },
+  {
+    "rank": 38,
+    "name": "Universitas Haluoleo"
+  },
+  {
+    "rank": 39,
+    "name": "Universitas Nusa Cendana"
+  },
+  {
+    "rank": 40,
+    "name": "Universitas Tadulako"
+  },
+  {
+    "rank": 41,
+    "name": "Universitas Jambi"
+  },
+  {
+    "rank": 42,
+    "name": "Universitas Bengkulu"
+  },
+  {
+    "rank": 43,
+    "name": "Universitas Trunojoyo Madura"
+  },
+  {
+    "rank": 44,
+    "name": "Universitas Sultan Ageng Tirtayasa"
+  },
+  {
+    "rank": 45,
+    "name": "Universitas Gunadarma"
+  },
+  {
+    "rank": 46,
+    "name": "Universitas Singaperbangsa Karawang"
+  },
+  {
+    "rank": 47,
+    "name": "Universitas Trisakti"
+  },
+  {
+    "rank": 48,
+    "name": "Universitas Katolik Atma Jaya"
+  },
+  {
+    "rank": 49,
+    "name": "Universitas Mercu Buana"
+  },
+  {
+    "rank": 50,
+    "name": "Universitas Muhammadiyah Malang"
+  },
+  {
+    "rank": 51,
+    "name": "Universitas Ahmad Dahlan"
+  },
+  {
+    "rank": 52,
+    "name": "Universitas Dian Nuswantoro"
+  },
+  {
+    "rank": 53,
+    "name": "Universitas Jenderal Soedirman"
+  },
+  {
+    "rank": 54,
+    "name": "Universitas Pembangunan Nasional Veteran Yogyakarta"
+  },
+  {
+    "rank": 55,
+    "name": "Universitas Pembangunan Nasional Veteran Jakarta"
+  },
+  {
+    "rank": 56,
+    "name": "Universitas Pembangunan Nasional Veteran Jawa Timur"
+  },
+  {
+    "rank": 57,
+    "name": "Universitas Tidar"
+  },
+  {
+    "rank": 58,
+    "name": "Universitas Siliwangi"
+  },
+  {
+    "rank": 60,
+    "name": "Universitas Warmadewa"
+  },
+  {
+    "rank": 61,
+    "name": "Universitas Negeri Gorontalo"
+  },
+  {
+    "rank": 62,
+    "name": "Universitas Khairun"
+  },
+  {
+    "rank": 63,
+    "name": "Universitas Musamus Merauke"
+  },
+  {
+    "rank": 64,
+    "name": "Universitas Cenderawasih"
+  },
+  {
+    "rank": 65,
+    "name": "Universitas Papua"
+  },
+  {
+    "rank": 66,
+    "name": "Universitas Borneo Tarakan"
+  },
+  {
+    "rank": 67,
+    "name": "Universitas Bangka Belitung"
+  },
+  {
+    "rank": 68,
+    "name": "Universitas Maritim Raja Ali Haji"
+  },
+  {
+    "rank": 69,
+    "name": "Universitas Muhammadiyah Surakarta"
+  },
+  {
+    "rank": 70,
+    "name": "Universitas Muhammadiyah Sumatera Utara"
+  },
+  {
+    "rank": 71,
+    "name": "Universitas Muhammadiyah Makassar"
+  },
+  {
+    "rank": 72,
+    "name": "Universitas Muhammadiyah Purwokerto"
+  },
+  {
+    "rank": 73,
+    "name": "Universitas Muhammadiyah Prof. Dr. HAMKA"
+  },
+  {
+    "rank": 74,
+    "name": "Universitas Muhammadiyah Sidoarjo"
+  },
+  {
+    "rank": 75,
+    "name": "Universitas Muhammadiyah Jember"
+  },
+  {
+    "rank": 76,
+    "name": "Universitas Muhammadiyah Ponorogo"
+  },
+  {
+    "rank": 77,
+    "name": "Universitas Muhammadiyah Purworejo"
+  },
+  {
+    "rank": 78,
+    "name": "Universitas Nahdlatul Ulama Surabaya"
+  },
+  {
+    "rank": 79,
+    "name": "Universitas Islam Negeri Sunan Kalijaga"
+  },
+  {
+    "rank": 80,
+    "name": "Universitas Islam Negeri Maulana Malik Ibrahim"
+  },
+  {
+    "rank": 81,
+    "name": "Universitas Islam Negeri Sunan Ampel"
+  },
+  {
+    "rank": 82,
+    "name": "Universitas Islam Negeri Alauddin"
+  },
+  {
+    "rank": 83,
+    "name": "Universitas Islam Negeri Ar-Raniry"
+  },
+  {
+    "rank": 84,
+    "name": "Universitas Islam Negeri Raden Fatah"
+  },
+  {
+    "rank": 85,
+    "name": "Universitas Islam Negeri Sunan Gunung Djati"
+  },
+  {
+    "rank": 86,
+    "name": "Universitas Islam Negeri Walisongo"
+  },
+  {
+    "rank": 87,
+    "name": "Universitas Islam Negeri Sultan Syarif Kasim"
+  },
+  {
+    "rank": 88,
+    "name": "Universitas Islam Negeri Syarif Hidayatullah"
+  },
+  {
+    "rank": 89,
+    "name": "Universitas Islam Negeri Jakarta"
+  },
+  {
+    "rank": 90,
+    "name": "Universitas Islam Negeri Mataram"
+  },
+  {
+    "rank": 91,
+    "name": "Universitas Islam Negeri Antasari"
+  },
+  {
+    "rank": 92,
+    "name": "Universitas Islam Negeri Imam Bonjol"
+  },
+  {
+    "rank": 93,
+    "name": "Universitas Islam Negeri Sulthan Thaha Saifuddin"
+  },
+  {
+    "rank": 94,
+    "name": "Universitas Islam Negeri Raden Intan"
+  },
+  {
+    "rank": 95,
+    "name": "Universitas Islam Negeri Sumatera Utara"
+  },
+  {
+    "rank": 96,
+    "name": "Universitas Islam Negeri Datokarama"
+  },
+  {
+    "rank": 99,
+    "name": "Institut Teknologi Del"
+  },
+  {
+    "rank": 100,
+    "name": "Institut Teknologi Kalimantan"
+  }
+]
