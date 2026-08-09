@@ -48,11 +48,16 @@ npm run build     # build ke dist/
 npm run preview   # preview hasil build
 ```
 
-## Deploy (gratis)
+## Deploy
 
-Paling gampang: Vercel (vercel.com) atau Netlify (netlify.com).
+Situs ini di-deploy ke **GitHub Pages** lewat GitHub Actions
+(`.github/workflows/deploy.yml`), pakai domain custom `pilihsma.ryanalvita.com`.
 
-1. Push repo ini ke GitHub.
-2. Di Vercel/Netlify: "New Project" -> import repo -> framework preset "Astro" (biasanya otomatis terdeteksi).
-3. Deploy. Setiap `git push` ke `main` akan auto-redeploy.
-4. Ganti `url` di `src/config/site.mjs` dengan domain hasil deploy-mu (dipakai untuk SEO/sitemap).
+1. Setiap `git push` ke `main` otomatis men-trigger workflow: build situs (`withastro/action`)
+   lalu deploy ke GitHub Pages (`actions/deploy-pages`).
+2. Di GitHub repo settings -> Pages, "Source" harus di-set ke **GitHub Actions** (bukan
+   "Deploy from a branch"), dan custom domain diisi `pilihsma.ryanalvita.com` — ini juga
+   sudah dituliskan ke `public/CNAME` supaya GitHub tidak mereset domain tiap deploy.
+3. Di DNS provider domain `ryanalvita.com`, tambahkan record `CNAME` untuk subdomain
+   `pilihsma` yang mengarah ke `ryanalvita.github.io`.
+4. Ganti `url` di `src/config/site.mjs` (dan isi `public/CNAME`) kalau domainnya berubah lagi.

@@ -3,7 +3,7 @@ export const SITE = {
   description:
     "Data hasil SNBP dari SMA di Indonesia (2024-2026), dikumpulkan dari pengumuman resmi tiap sekolah — dimulai dari Kota Bandung.",
   defaultLanguage: "id",
-  url: "https://snbp.ryanalvita.com",
+  url: "https://pilihsma.ryanalvita.com",
   author: "PilihSMA",
   ogImage: "/og-image.png", // Add this image to your public folder
   // Web3Forms: Get your free access key from https://web3forms.com
