@@ -3,16 +3,17 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import SubmitDataForm from "../components/SubmitDataForm.astro";
+import { SITE } from "../config/site.mjs";
 ---
 
 <Layout
   title="Kontribusi Data"
   description="Bantu lengkapi data SNBP sekolahmu."
-  canonicalURL="/submit"
+  canonicalURL={`${SITE.base}/submit`}
 >
   <Header />
   <main id="main-content" role="main" class="max-w-2xl mx-auto px-4 py-10">
-    <a href="/" class="text-sm text-gray-500 hover:text-amber-700"
+    <a href={`${SITE.base}/`} class="text-sm text-gray-500 hover:text-amber-700"
       >← Beranda</a
     >
 

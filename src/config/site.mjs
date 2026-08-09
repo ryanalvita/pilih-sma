@@ -3,7 +3,13 @@ export const SITE = {
   description:
     "Data hasil SNBP dari SMA di Indonesia (2024-2026), dikumpulkan dari pengumuman resmi tiap sekolah — dimulai dari Kota Bandung.",
   defaultLanguage: "id",
-  url: "https://pilihsma.ryanalvita.com",
+  url: "https://ryanalvita.com",
+  // Temporary: no dedicated custom domain configured for this repo's GitHub
+  // Pages site, so it's served as a project page under the account's apex
+  // domain instead - https://ryanalvita.com/pilih-sma/. Revert to a bare
+  // "/" base (and set url to the dedicated subdomain) once/if
+  // pilihsma.ryanalvita.com is set up as this repo's own custom domain.
+  base: "/pilih-sma",
   author: "PilihSMA",
   ogImage: "/og-image.png", // Add this image to your public folder
   // Web3Forms: Get your free access key from https://web3forms.com

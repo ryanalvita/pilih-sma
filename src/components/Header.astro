@@ -12,7 +12,7 @@ import { SITE } from "../config/site.mjs";
     aria-label="Main navigation"
   >
     <a
-      href="/"
+      href={`${SITE.base}/`}
       class="flex items-baseline gap-2 hover:opacity-80 transition-opacity"
       aria-label="PilihSMA - Beranda"
     >
@@ -38,9 +38,11 @@ import { SITE } from "../config/site.mjs";
     <ul class="hidden md:flex items-center gap-6" role="list">
       <li>
         <a
-          href="/about"
+          href={`${SITE.base}/about`}
           class="text-gray-600 hover:text-gray-900 transition-colors"
-          aria-current={Astro.url.pathname === "/about" ? "page" : undefined}
+          aria-current={
+            Astro.url.pathname === `${SITE.base}/about/` ? "page" : undefined
+          }
         >
           Tentang Data
         </a>
@@ -49,10 +51,12 @@ import { SITE } from "../config/site.mjs";
         SITE.submitEnabled && (
           <li>
             <a
-              href="/submit"
+              href={`${SITE.base}/submit`}
               class="px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-amber-700 transition-colors"
               aria-current={
-                Astro.url.pathname === "/submit" ? "page" : undefined
+                Astro.url.pathname === `${SITE.base}/submit/`
+                  ? "page"
+                  : undefined
               }
             >
               Kontribusi Data
@@ -73,7 +77,7 @@ import { SITE } from "../config/site.mjs";
     <ul class="flex flex-col py-4" role="list">
       <li>
         <a
-          href="/about"
+          href={`${SITE.base}/about`}
           class="block px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors"
           role="menuitem"
         >
@@ -84,7 +88,7 @@ import { SITE } from "../config/site.mjs";
         SITE.submitEnabled && (
           <li>
             <a
-              href="/submit"
+              href={`${SITE.base}/submit`}
               class="block px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors"
               role="menuitem"
             >

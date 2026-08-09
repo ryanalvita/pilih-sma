@@ -51,13 +51,19 @@ npm run preview   # preview hasil build
 ## Deploy
 
 Situs ini di-deploy ke **GitHub Pages** lewat GitHub Actions
-(`.github/workflows/deploy.yml`), pakai domain custom `pilihsma.ryanalvita.com`.
+(`.github/workflows/deploy.yml`), sama seperti `bank-statement-parser`.
 
 1. Setiap `git push` ke `main` otomatis men-trigger workflow: build situs (`withastro/action`)
    lalu deploy ke GitHub Pages (`actions/deploy-pages`).
 2. Di GitHub repo settings -> Pages, "Source" harus di-set ke **GitHub Actions** (bukan
-   "Deploy from a branch"), dan custom domain diisi `pilihsma.ryanalvita.com` — ini juga
-   sudah dituliskan ke `public/CNAME` supaya GitHub tidak mereset domain tiap deploy.
-3. Di DNS provider domain `ryanalvita.com`, tambahkan record `CNAME` untuk subdomain
-   `pilihsma` yang mengarah ke `ryanalvita.github.io`.
-4. Ganti `url` di `src/config/site.mjs` (dan isi `public/CNAME`) kalau domainnya berubah lagi.
+   "Deploy from a branch").
+3. **Sementara tanpa custom domain**: kolom "Custom domain" di Pages settings dikosongkan,
+   jadi situsnya nempel di URL akun (`https://ryanalvita.com/pilih-sma/`, karena akun ini
+   sudah punya domain apex `ryanalvita.com` terpasang di GitHub Pages-nya) — bukan
+   `https://ryanalvita.github.io/pilih-sma/`. `src/config/site.mjs` (`url` + `base`) dan
+   `astro.config.mjs` (`base: SITE.base`) sudah disesuaikan untuk path `/pilih-sma/` ini,
+   supaya semua asset/link nggak patah.
+4. Kalau nanti mau pindah ke domain sendiri (mis. `pilihsma.ryanalvita.com`): tambahkan
+   CNAME record di DNS ke `ryanalvita.github.io`, isi custom domain di Pages settings,
+   tambahkan lagi `public/CNAME`, lalu ubah `url` ke domain itu dan `base` jadi `"/"`
+   di `src/config/site.mjs`.

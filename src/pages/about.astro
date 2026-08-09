@@ -2,16 +2,19 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import { SITE } from "../config/site.mjs";
 ---
 
 <Layout
   title="Tentang Data"
   description="Cerita di balik PilihSMA dan metodologi pengumpulan datanya."
-  canonicalURL="/about"
+  canonicalURL={`${SITE.base}/about`}
 >
   <Header />
   <main id="main-content" role="main" class="max-w-2xl mx-auto px-4 py-10">
-    <a href="/" class="text-sm text-gray-500 hover:text-amber-700">← Beranda</a>
+    <a href={`${SITE.base}/`} class="text-sm text-gray-500 hover:text-amber-700"
+      >← Beranda</a
+    >
 
     <header class="mt-4 mb-8">
       <p
@@ -59,7 +62,7 @@ import Footer from "../components/Footer.astro";
             buka jadi website publik biar bisa dipakai siapa saja, bukan cuma
             keluarga saya. Selain itu, dengan dibuka ke publik, orang lain juga
             bisa berkontribusi data yang belum saya masukkan melalui halaman <a
-              href="/submit"
+              href={`${SITE.base}/submit`}
               class="underline hover:text-amber-700">Kontribusi Data</a
             >, supaya datanya lebih lengkap dan bermanfaat untuk lebih banyak
             orang.
@@ -91,7 +94,7 @@ import Footer from "../components/Footer.astro";
         <dd class="text-gray-600 leading-relaxed">
           <p class="mb-2">
             Kamu bisa berkontribusi data melalui halaman <a
-              href="/submit"
+              href={`${SITE.base}/submit`}
               class="underline hover:text-amber-700">Kontribusi Data</a
             >:
           </p>
@@ -168,7 +171,7 @@ import Footer from "../components/Footer.astro";
             Kami sudah mengecek ke Instagram sekolah atau sumber informasi
             publik lainnya, tapi belum menemukan datanya. Ini yang paling bisa
             kamu bantu lewat halaman <a
-              href="/submit"
+              href={`${SITE.base}/submit`}
               class="underline hover:text-amber-700">Kontribusi Data</a
             >.
           </p>
@@ -200,7 +203,7 @@ import Footer from "../components/Footer.astro";
           <p>
             Kalau kamu menemukan data yang salah, silakan kirim koreksinya
             melalui halaman <a
-              href="/submit"
+              href={`${SITE.base}/submit`}
               class="underline hover:text-amber-700">Kontribusi Data</a
             > lengkap dengan link sumber.
           </p>

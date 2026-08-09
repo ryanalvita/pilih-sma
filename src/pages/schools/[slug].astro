@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import Sparkline from "../../components/Sparkline.astro";
+import { SITE } from "../../config/site.mjs";
 import {
   ALL_SCHOOLS,
   recordsForSchool,
@@ -47,11 +48,11 @@ const yearsMissingBreakdown = records.filter((r) => !r.hasBreakdown);
 <Layout
   title={`${school.name} — hasil SNBP`}
   description={`Rincian hasil SNBP ${school.name} tahun 2024–2026, per universitas.`}
-  canonicalURL={`/schools/${school.slug}/`}
+  canonicalURL={`${SITE.base}/schools/${school.slug}/`}
 >
   <Header />
   <main id="main-content" role="main" class="max-w-5xl mx-auto px-4 py-10">
-    <a href="/" class="text-sm text-gray-500 hover:text-amber-700"
+    <a href={`${SITE.base}/`} class="text-sm text-gray-500 hover:text-amber-700"
       >← Beranda</a
     >
 
@@ -215,7 +216,7 @@ const yearsMissingBreakdown = records.filter((r) => !r.hasBreakdown);
     }
 
     <p class="mt-10">
-      <a href="/submit" class="text-amber-700 font-medium hover:underline">
+      <a href={`${SITE.base}/submit`} class="text-amber-700 font-medium hover:underline">
         Punya data yang lebih lengkap untuk {school.name}? Kirim ke kami →
       </a>
     </p>

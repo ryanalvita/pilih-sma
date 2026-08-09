@@ -65,7 +65,7 @@ const universityOptions = rankedUniversities();
 <Layout
   title={`${SITE.title} — Data hasil SNBP SMA`}
   description={SITE.description}
-  canonicalURL="/"
+  canonicalURL={`${SITE.base}/`}
 >
   <Header />
   <main id="main-content" role="main" class="max-w-5xl mx-auto px-4">
@@ -92,7 +92,7 @@ const universityOptions = rankedUniversities();
           sumber publik lainnya.
         </li>
         <li>
-          Lihat <a href="/about" class="underline hover:text-gray-900"
+          Lihat <a href={`${SITE.base}/about`} class="underline hover:text-gray-900"
             >ceritanya</a
           > mengapa website ini dibuat dan lebih detil Tentang Data dalam website
           ini.
@@ -101,7 +101,7 @@ const universityOptions = rankedUniversities();
           SITE.submitEnabled && (
             <li>
               Ingin menambahkan atau mengoreksi data? Lihat halaman{" "}
-              <a href="/submit" class="underline hover:text-gray-900">
+              <a href={`${SITE.base}/submit`} class="underline hover:text-gray-900">
                 Kontribusi Data
               </a>
               .
@@ -208,7 +208,7 @@ const universityOptions = rankedUniversities();
               >
                 <td class="py-3 pr-3">
                   <a
-                    href={`/schools/${s.slug}/`}
+                    href={`${SITE.base}/schools/${s.slug}/`}
                     class="font-semibold text-gray-900 hover:text-amber-700"
                   >
                     {s.name}
@@ -253,7 +253,7 @@ const universityOptions = rankedUniversities();
         <li>
           Data dikumpulkan manual dan bisa saja ada yang keliru atau kurang
           lengkap. Lihat halaman tiap sekolah untuk sumbernya, atau baca bagian <a
-            href="/about"
+            href={`${SITE.base}/about`}
             class="underline hover:text-gray-900">Tentang Data</a
           >.
         </li>
@@ -262,7 +262,7 @@ const universityOptions = rankedUniversities();
             <li>
               Melihat data yang keliru atau punya data yang lebih
               lengkap/lebih baru?{" "}
-              <a href="/submit" class="underline hover:text-gray-900">
+              <a href={`${SITE.base}/submit`} class="underline hover:text-gray-900">
                 Kontribusi Data
               </a>{" "}
               ke kami, nanti akan kami tambahkan ke websitenya.
