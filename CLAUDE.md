@@ -21,6 +21,13 @@ python3 parse.py        # regenerate the site's data from raw_data.tsv (see cave
 
 There is no test suite.
 
+## Commits
+
+Use [Conventional Commits](https://www.conventionalcommits.org/) (`feat:`, `fix:`,
+`chore:`, `docs:`, `refactor:`, etc.) for every commit message in this repo — including
+ones written on the user's behalf. Keep the subject line imperative and scoped to one
+logical change; put rationale/context in the body when it's not obvious from the diff.
+
 **`npm run lint` and `npm run format`/`format:check` are currently broken** — the scripts exist in
 `package.json` but there is no ESLint config (`.eslintrc*`) or Prettier config (`.prettierrc*`) in
 the repo, so both fail immediately with "couldn't find a configuration file". `npm run type-check`
