@@ -1,0 +1,441 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Sparkline from "../components/Sparkline.astro";
+import { SITE } from "../config/site.mjs";
+import {
+  schoolSummaries,
+  recordsForSchool,
+  rankedUniversities,
+  universityLabel,
+  YEARS,
+} from "../data";
+
+const summaries = schoolSummaries().sort((a, b) => {
+  const aVal = a.accepted[2026] ?? a.accepted[2025] ?? a.accepted[2024] ?? -1;
+  const bVal = b.accepted[2026] ?? b.accepted[2025] ?? b.accepted[2024] ?? -1;
+  return bVal - aVal;
+});
+
+// Full per-year, per-university breakdown for every school, handed to the client
+// script so the "diterima ke universitas X" filter can recompute the table (values
+// + ranking) without a page reload. hasBreakdown distinguishes "0 diterima" from
+// "belum ada rincian" (null) — collapsing that would misrepresent unknown data as zero.
+const tableData: Record<
+  string,
+  {
+    name: string;
+    years: Record<
+      number,
+      {
+        total: number | null;
+        hasBreakdown: boolean;
+        universities: Record<string, number>;
+      }
+    >;
+  }
+> = {};
+for (const s of summaries) {
+  const records = recordsForSchool(s.slug);
+  const years: Record<
+    number,
+    {
+      total: number | null;
+      hasBreakdown: boolean;
+      universities: Record<string, number>;
+    }
+  > = {};
+  for (const y of YEARS) {
+    const rec = records.find((r) => r.year === y);
+    years[y] = rec
+      ? {
+          total: rec.accepted,
+          hasBreakdown: rec.hasBreakdown,
+          universities: rec.universities,
+        }
+      : { total: null, hasBreakdown: false, universities: {} };
+  }
+  tableData[s.slug] = { name: s.name, years };
+}
+
+const universityOptions = rankedUniversities();
+---
+
+<Layout
+  title={`${SITE.title} — Data hasil SNBP SMA`}
+  description={SITE.description}
+  canonicalURL="/"
+>
+  <Header />
+  <main id="main-content" role="main" class="max-w-5xl mx-auto px-4">
+    <!-- Hero -->
+    <section class="pt-14 pb-10 border-b border-gray-200">
+      <p
+        class="font-mono text-xs uppercase tracking-widest text-amber-700 mb-3"
+      >
+        Pilih SMA · Hasil SNBP
+      </p>
+      <h1
+        class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight max-w-xl leading-tight"
+      >
+        Sekolah mana yang paling banyak lolos PTN melalui SNBP?
+      </h1>
+      <ul
+        class="mt-4 text-gray-600 max-w-2xl leading-relaxed list-disc pl-5 space-y-1"
+      >
+        <li>
+          Berikut adalah data rekap jumlah siswa yang diterima lewat jalur
+          SNBP dari <strong class="text-gray-900"
+            >{summaries.length} SMA</strong
+          >, dikumpulkan dari pengumuman resmi tiap sekolah di Instagram dan
+          sumber publik lainnya.
+        </li>
+        <li>
+          Lihat <a href="/about" class="underline hover:text-gray-900"
+            >ceritanya</a
+          > mengapa website ini dibuat dan lebih detil Tentang Data dalam website
+          ini.
+        </li>
+        {
+          SITE.submitEnabled && (
+            <li>
+              Ingin menambahkan atau mengoreksi data? Lihat halaman{" "}
+              <a href="/submit" class="underline hover:text-gray-900">
+                Kontribusi Data
+              </a>
+              .
+            </li>
+          )
+        }
+        <li>Klik satu sekolah untuk lihat rincian per universitas.</li>
+      </ul>
+    </section>
+
+    <!-- Search + filter -->
+    <section class="py-6 flex flex-col sm:flex-row gap-3">
+      <input
+        id="search"
+        type="search"
+        placeholder="Cari nama sekolah… (mis. SMAN 3, Alfa Centauri)"
+        aria-label="Cari sekolah"
+        class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-gray-900 outline-none transition-colors"
+      />
+      <div class="sm:w-80 relative">
+        <label for="university-filter" class="sr-only"
+          >Tampilkan jumlah lolos ke universitas tertentu</label
+        >
+        <select
+          id="university-filter"
+          class="w-full h-full appearance-none px-4 py-3 pr-9 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-gray-900 outline-none transition-colors bg-white text-gray-900"
+        >
+          <option value="">Semua universitas</option>
+          {
+            universityOptions.map((u) => (
+              <option value={u}>{universityLabel(u)}</option>
+            ))
+          }
+        </select>
+        <svg
+          class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
+          viewBox="0 0 20 20"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M5 7.5L10 12.5L15 7.5"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </section>
+    <!-- Table -->
+    <section class="pb-6 overflow-x-auto">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="border-b-2 border-gray-900">
+            <th
+              scope="col"
+              class="text-left font-mono text-xs uppercase tracking-wider text-gray-500 py-2 pr-3"
+            >
+              <button
+                type="button"
+                class="sort-btn inline-flex items-center gap-1 cursor-pointer hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-1 rounded"
+                data-sort-key="name"
+              >
+                Sekolah <span
+                  class="sort-indicator w-3 inline-block"
+                  aria-hidden="true"></span>
+              </button>
+            </th>
+            {
+              YEARS.map((y) => (
+                <th
+                  scope="col"
+                  class="text-center font-mono text-xs uppercase tracking-wider text-gray-500 py-2 px-2 w-16"
+                >
+                  <button
+                    type="button"
+                    class="sort-btn inline-flex items-center gap-1 cursor-pointer hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-1 rounded"
+                    data-sort-key={y}
+                  >
+                    {y}{" "}
+                    <span
+                      class="sort-indicator w-3 inline-block"
+                      aria-hidden="true"
+                    />
+                  </button>
+                </th>
+              ))
+            }
+            <th
+              scope="col"
+              class="text-left font-mono text-xs uppercase tracking-wider text-gray-500 py-2 pl-3 w-56"
+              >Tren</th
+            >
+          </tr>
+        </thead>
+        <tbody>
+          {
+            summaries.map((s) => (
+              <tr
+                class="school-row border-b border-gray-100 hover:bg-gray-50"
+                data-name={s.name.toLowerCase()}
+                data-slug={s.slug}
+              >
+                <td class="py-3 pr-3">
+                  <a
+                    href={`/schools/${s.slug}/`}
+                    class="font-semibold text-gray-900 hover:text-amber-700"
+                  >
+                    {s.name}
+                  </a>
+                  <span
+                    class={`ml-2 inline-block font-mono text-[10px] uppercase tracking-wide px-1.5 py-0.5 rounded ${s.type === "negeri" ? "bg-amber-100 text-amber-800" : "bg-gray-100 text-gray-600"}`}
+                  >
+                    {s.type === "negeri" ? "Negeri" : "Swasta"}
+                  </span>
+                </td>
+                {YEARS.map((y) => (
+                  <td class="year-cell text-center py-3 px-2 tabular-nums">
+                    {s.accepted[y] ?? <span class="text-gray-300">–</span>}
+                  </td>
+                ))}
+                <td class="trend-cell py-3 pl-3">
+                  <Sparkline
+                    values={YEARS.map((y) => s.accepted[y] ?? null)}
+                    label={`Tren jumlah lolos ${s.name}: ${YEARS.map((y) => `${y} ${s.accepted[y] ?? "tidak ada data"}`).join(", ")}`}
+                  />
+                </td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+      <p id="no-results" hidden class="text-gray-500 py-6">
+        Tidak ada sekolah yang cocok.
+      </p>
+    </section>
+
+    <!-- Caveats -->
+    <section class="py-10 border-t border-gray-200 mb-10">
+      <h2 class="text-lg font-semibold text-gray-900 mb-3">
+        Catatan tentang data di PilihSMA
+      </h2>
+      <ul class="space-y-2 text-gray-600 list-disc pl-5 max-w-2xl">
+        <li>
+          Angka "lolos" adalah total siswa diterima lewat SNBP di tahun
+          tersebut, sesuai pengumuman yang dipublikasikan sekolah.
+        </li>
+        <li>
+          Data dikumpulkan manual dan bisa saja ada yang keliru atau kurang
+          lengkap. Lihat halaman tiap sekolah untuk sumbernya, atau baca bagian <a
+            href="/about"
+            class="underline hover:text-gray-900">Tentang Data</a
+          >.
+        </li>
+        {
+          SITE.submitEnabled && (
+            <li>
+              Melihat data yang keliru atau punya data yang lebih
+              lengkap/lebih baru?{" "}
+              <a href="/submit" class="underline hover:text-gray-900">
+                Kontribusi Data
+              </a>{" "}
+              ke kami, nanti akan kami tambahkan ke websitenya.
+            </li>
+          )
+        }
+      </ul>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<script define:vars={{ tableData, YEARS }}>
+  const SPARK_W = 64;
+  const SPARK_H = 22;
+  const SPARK_PAD = 3;
+
+  function sparklineGeometry(values) {
+    const points = values
+      .map((val, i) => ({ i, val }))
+      .filter((p) => p.val != null);
+    if (points.length === 0) return null;
+
+    const vals = points.map((p) => p.val);
+    const min = Math.min(...vals);
+    const max = Math.max(...vals);
+    const x = (i) =>
+      SPARK_PAD + (i / (YEARS.length - 1)) * (SPARK_W - SPARK_PAD * 2);
+    const y = (v) =>
+      max === min
+        ? SPARK_H / 2
+        : SPARK_H -
+          SPARK_PAD -
+          ((v - min) / (max - min)) * (SPARK_H - SPARK_PAD * 2);
+
+    return points.map((p) => ({ x: x(p.i), y: y(p.val) }));
+  }
+
+  function sparklineSVG(values, label) {
+    const coords = sparklineGeometry(values);
+    let inner = "";
+    if (coords) {
+      if (coords.length > 1) {
+        const linePoints = coords.map((c) => `${c.x},${c.y}`).join(" ");
+        inner += `<polyline points="${linePoints}" fill="none" stroke="#9ca3af" stroke-width="1.75" stroke-linejoin="round" stroke-linecap="round" />`;
+      }
+      coords.forEach((c, i) => {
+        inner +=
+          i === coords.length - 1
+            ? `<circle cx="${c.x}" cy="${c.y}" r="3" fill="#b45309" stroke="white" stroke-width="1.5" />`
+            : `<circle cx="${c.x}" cy="${c.y}" r="1.75" fill="#9ca3af" />`;
+      });
+    } else {
+      inner = `<text x="${SPARK_W / 2}" y="${SPARK_H / 2 + 3}" text-anchor="middle" font-size="10" fill="#d1d5db">–</text>`;
+    }
+    return `<svg width="${SPARK_W}" height="${SPARK_H}" viewBox="0 0 ${SPARK_W} ${SPARK_H}" role="img" aria-label="${label.replace(/"/g, "&quot;")}">${inner}</svg>`;
+  }
+
+  const searchInput = document.getElementById("search");
+  const universitySelect = document.getElementById("university-filter");
+  const table = document.querySelector("table");
+  const tbody = table.querySelector("tbody");
+  const rows = Array.from(tbody.querySelectorAll(".school-row"));
+  const noResults = document.getElementById("no-results");
+  const sortButtons = Array.from(table.querySelectorAll(".sort-btn"));
+
+  let currentUniversity = "";
+  // "default" = rank by the most recent year with data, same heuristic used for
+  // the server-rendered initial order. Any other key is one of the year columns
+  // (or "name"), set by clicking a header.
+  let sortState = { key: "default", dir: "desc" };
+
+  function valueFor(slug, year) {
+    const yearData = tableData[slug].years[year];
+    if (!currentUniversity) return yearData.total;
+    if (!yearData.hasBreakdown) return null;
+    return yearData.universities[currentUniversity] ?? 0;
+  }
+
+  function bestValue(slug) {
+    for (let i = YEARS.length - 1; i >= 0; i--) {
+      const v = valueFor(slug, YEARS[i]);
+      if (v != null) return v;
+    }
+    return -1;
+  }
+
+  function renderRow(row) {
+    const slug = row.dataset.slug;
+    const values = YEARS.map((y) => valueFor(slug, y));
+    const yearCells = row.querySelectorAll(".year-cell");
+    yearCells.forEach((cell, i) => {
+      const v = values[i];
+      cell.innerHTML =
+        v == null ? '<span class="text-gray-300">–</span>' : String(v);
+    });
+    const label = `Tren jumlah lolos ${tableData[slug].name}: ${YEARS.map((y, i) => `${y} ${values[i] ?? "tidak ada data"}`).join(", ")}`;
+    row.querySelector(".trend-cell").innerHTML = sparklineSVG(values, label);
+  }
+
+  function sortRows() {
+    const dir = sortState.dir === "asc" ? 1 : -1;
+    rows.sort((ra, rb) => {
+      const sa = ra.dataset.slug;
+      const sb = rb.dataset.slug;
+      if (sortState.key === "name")
+        return dir * tableData[sa].name.localeCompare(tableData[sb].name, "id");
+      if (sortState.key === "default") return bestValue(sb) - bestValue(sa);
+      const va = valueFor(sa, Number(sortState.key));
+      const vb = valueFor(sb, Number(sortState.key));
+      const na = va == null ? -1 : va;
+      const nb = vb == null ? -1 : vb;
+      return dir * (nb - na);
+    });
+    rows.forEach((row) => tbody.appendChild(row));
+  }
+
+  function updateSortIndicators() {
+    sortButtons.forEach((btn) => {
+      const key = btn.dataset.sortKey;
+      const th = btn.closest("th");
+      const indicator = btn.querySelector(".sort-indicator");
+      if (key === sortState.key) {
+        th.setAttribute(
+          "aria-sort",
+          sortState.dir === "asc" ? "ascending" : "descending"
+        );
+        indicator.textContent = sortState.dir === "asc" ? "↓" : "↑";
+      } else {
+        th.setAttribute("aria-sort", "none");
+        indicator.textContent = "";
+      }
+    });
+  }
+
+  function applySearch() {
+    const q = searchInput.value.trim().toLowerCase();
+    let visible = 0;
+    for (const row of rows) {
+      const match = row.dataset.name?.includes(q) ?? false;
+      row.hidden = !match;
+      if (match) visible++;
+    }
+    noResults.hidden = visible !== 0;
+  }
+
+  function refresh() {
+    rows.forEach(renderRow);
+    sortRows();
+    updateSortIndicators();
+    applySearch();
+  }
+
+  searchInput.addEventListener("input", applySearch);
+
+  universitySelect.addEventListener("change", () => {
+    currentUniversity = universitySelect.value;
+    sortState = { key: "default", dir: "desc" };
+    refresh();
+  });
+
+  sortButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const key = btn.dataset.sortKey;
+      if (sortState.key === key) {
+        sortState.dir = sortState.dir === "asc" ? "desc" : "asc";
+      } else {
+        sortState = { key, dir: key === "name" ? "asc" : "desc" };
+      }
+      sortRows();
+      updateSortIndicators();
+    });
+  });
+
+  updateSortIndicators();
+</script>

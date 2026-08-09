@@ -1,0 +1,84 @@
+---
+// Small trend line for a row of up-to-3 yearly values. Scaled to its own
+// min/max (not a shared scale across rows) so a small series' ups and downs
+// are just as visible as a large one — the mark's job is to show shape, not
+// magnitude. The most recent known value is highlighted in the accent color,
+// matching the stat-tile "trend" convention used elsewhere on the site.
+interface Props {
+  values: (number | null)[];
+  label: string;
+  width?: number;
+  height?: number;
+}
+
+const { values, label, width = 64, height = 22 } = Astro.props;
+const pad = 3;
+
+const points = values
+  .map((val, i) => ({ i, val }))
+  .filter((p): p is { i: number; val: number } => p.val != null);
+
+let coords: { x: number; y: number }[] = [];
+if (points.length > 0) {
+  const vals = points.map((p) => p.val);
+  const min = Math.min(...vals);
+  const max = Math.max(...vals);
+  const x = (i: number) => pad + (i / (values.length - 1)) * (width - pad * 2);
+  const y = (v: number) =>
+    max === min
+      ? height / 2
+      : height - pad - ((v - min) / (max - min)) * (height - pad * 2);
+  coords = points.map((p) => ({ x: x(p.i), y: y(p.val) }));
+}
+const linePoints = coords.map((c) => `${c.x},${c.y}`).join(" ");
+---
+
+<svg
+  width={width}
+  height={height}
+  viewBox={`0 0 ${width} ${height}`}
+  role="img"
+  aria-label={label}
+>
+  {
+    coords.length > 1 && (
+      <polyline
+        points={linePoints}
+        fill="none"
+        stroke="#9ca3af"
+        stroke-width="1.75"
+        stroke-linejoin="round"
+        stroke-linecap="round"
+      />
+    )
+  }
+  {
+    coords.map((c, i) =>
+      i === coords.length - 1 ? (
+        <circle
+          cx={c.x}
+          cy={c.y}
+          r="3"
+          fill="#b45309"
+          stroke="white"
+          stroke-width="1.5"
+        />
+      ) : (
+        <circle cx={c.x} cy={c.y} r="1.75" fill="#9ca3af" />
+      ),
+    )
+  }
+  {
+    coords.length === 0 && (
+      <text
+        x={width / 2}
+        y={height / 2 + 3}
+        text-anchor="middle"
+        font-size="10"
+        fill="#d1d5db"
+      >
+        –
+      </text>
+    )
+  }
+</svg>
