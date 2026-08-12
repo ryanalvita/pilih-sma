@@ -12,6 +12,12 @@ interface Props {
 }
 
 const { values, label, width = 64, height = 22 } = Astro.props;
+// Tailwind's preflight sets `svg { display: block }`, so `text-align` on a
+// containing cell has no effect on it (that only repositions inline content).
+// `ml-auto` pushes this block-level element to the right edge of its
+// container instead. Every call site places this as the last (trend) column
+// in a right-aligned table, so defaulting to right-aligned here keeps every
+// usage consistent without each caller having to remember to do it.
 const pad = 3;
 
 const points = values
@@ -34,6 +40,7 @@ const linePoints = coords.map((c) => `${c.x},${c.y}`).join(" ");
 ---
 
 <svg
+  class="ml-auto"
   width={width}
   height={height}
   viewBox={`0 0 ${width} ${height}`}

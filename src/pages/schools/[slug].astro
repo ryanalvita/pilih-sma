@@ -43,6 +43,20 @@ function sourceLabel(source: string): string {
 }
 
 const yearsMissingBreakdown = records.filter((r) => !r.hasBreakdown);
+
+// Per-university/per-year values, handed to the client script so the "per
+// universitas" table can be re-sorted by column without a page reload — same
+// pattern as the homepage table's tableData, just without a search/filter to
+// also re-render, so the client only ever needs to reorder existing rows.
+const universityTableData: Record<
+  string,
+  { label: string; years: Record<number, number | null> }
+> = {};
+for (const uni of universityRows) {
+  const years: Record<number, number | null> = {};
+  for (const y of YEARS) years[y] = valueFor(uni, y);
+  universityTableData[uni] = { label: universityLabel(uni), years };
+}
 ---
 
 <Layout
@@ -73,26 +87,44 @@ const yearsMissingBreakdown = records.filter((r) => !r.hasBreakdown);
           <p class="text-sm text-gray-500 mb-4">
             Jumlah siswa diterima SNBP tiap tahun, dirincikan per universitas, diurutkan dari tujuan terbanyak
           </p>
-          <table class="w-full text-sm border-collapse">
+          <table id="university-table" class="w-full text-sm border-collapse">
             <thead>
               <tr class="border-b-2 border-gray-900">
                 <th
                   scope="col"
                   class="text-left font-mono text-xs uppercase tracking-wider text-gray-500 py-2 pr-3"
                 >
-                  Universitas
+                  <button
+                    type="button"
+                    class="sort-btn inline-flex items-center gap-1 cursor-pointer hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-1 rounded"
+                    data-sort-key="name"
+                  >
+                    Universitas <span
+                      class="sort-indicator w-3 inline-block"
+                      aria-hidden="true"></span>
+                  </button>
                 </th>
                 {YEARS.map((y) => (
                   <th
                     scope="col"
-                    class="text-center font-mono text-xs uppercase tracking-wider text-gray-500 py-2 px-2 w-16"
+                    class="text-right font-mono text-xs uppercase tracking-wider text-gray-500 py-2 px-2 w-16"
                   >
-                    {y}
+                    <button
+                      type="button"
+                      class="sort-btn inline-flex items-center gap-1 justify-end cursor-pointer hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-1 rounded"
+                      data-sort-key={y}
+                    >
+                      {y}{" "}
+                      <span
+                        class="sort-indicator w-3 inline-block"
+                        aria-hidden="true"
+                      />
+                    </button>
                   </th>
                 ))}
                 <th
                   scope="col"
-                  class="text-left font-mono text-xs uppercase tracking-wider text-gray-500 py-2 pl-3 w-56"
+                  class="text-right font-mono text-xs uppercase tracking-wider text-gray-500 py-2 pl-3 w-20"
                 >
                   Tren
                 </th>
@@ -100,7 +132,10 @@ const yearsMissingBreakdown = records.filter((r) => !r.hasBreakdown);
             </thead>
             <tbody>
               {universityRows.map((uni) => (
-                <tr class="border-b border-gray-100 hover:bg-gray-50">
+                <tr
+                  class="uni-row border-b border-gray-100 hover:bg-gray-50"
+                  data-uni={uni}
+                >
                   <th
                     scope="row"
                     class="text-left font-semibold text-gray-900 py-3 pr-3"
@@ -110,12 +145,12 @@ const yearsMissingBreakdown = records.filter((r) => !r.hasBreakdown);
                   {YEARS.map((y) => {
                     const val = valueFor(uni, y);
                     return (
-                      <td class="text-center py-3 px-2 tabular-nums">
+                      <td class="text-right py-3 px-2 tabular-nums">
                         {val ?? <span class="text-gray-300">–</span>}
                       </td>
                     );
                   })}
-                  <td class="py-3 pl-3">
+                  <td class="text-right py-3 pl-3">
                     <Sparkline
                       values={YEARS.map((y) => valueFor(uni, y))}
                       label={`Tren ${universityInfo(uni)?.abbreviation ?? uni} di ${school.name}: ${YEARS.map((y) => `${y} ${valueFor(uni, y) ?? "tidak ada data"}`).join(", ")}`}
@@ -223,3 +258,78 @@ const yearsMissingBreakdown = records.filter((r) => !r.hasBreakdown);
   </main>
   <Footer />
 </Layout>
+
+<script define:vars={{ universityTableData, YEARS }}>
+  const table = document.getElementById("university-table");
+  // Table (and its sort buttons) only exists when the school has at least one
+  // recorded university breakdown — see `universityRows.length > 0` above.
+  if (table) {
+    const tbody = table.querySelector("tbody");
+    const rows = Array.from(tbody.querySelectorAll(".uni-row"));
+    const sortButtons = Array.from(table.querySelectorAll(".sort-btn"));
+
+    // No search/filter on this page (unlike the homepage table), so sorting
+    // never needs to change what's displayed — just reorder the existing rows.
+    let sortState = { key: null, dir: "desc" };
+
+    function valueFor(uni, year) {
+      return universityTableData[uni].years[year];
+    }
+
+    function sortRows() {
+      const dir = sortState.dir === "asc" ? 1 : -1;
+      rows.sort((ra, rb) => {
+        const ua = ra.dataset.uni;
+        const ub = rb.dataset.uni;
+        if (sortState.key === "name") {
+          return (
+            dir *
+            universityTableData[ua].label.localeCompare(
+              universityTableData[ub].label,
+              "id",
+            )
+          );
+        }
+        const va = valueFor(ua, Number(sortState.key));
+        const vb = valueFor(ub, Number(sortState.key));
+        const na = va == null ? -1 : va;
+        const nb = vb == null ? -1 : vb;
+        return dir * (nb - na);
+      });
+      rows.forEach((row) => tbody.appendChild(row));
+    }
+
+    function updateSortIndicators() {
+      sortButtons.forEach((btn) => {
+        const key = btn.dataset.sortKey;
+        const th = btn.closest("th");
+        const indicator = btn.querySelector(".sort-indicator");
+        if (key === sortState.key) {
+          th.setAttribute(
+            "aria-sort",
+            sortState.dir === "asc" ? "ascending" : "descending",
+          );
+          indicator.textContent = sortState.dir === "asc" ? "↓" : "↑";
+        } else {
+          th.setAttribute("aria-sort", "none");
+          indicator.textContent = "";
+        }
+      });
+    }
+
+    sortButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const key = btn.dataset.sortKey;
+        if (sortState.key === key) {
+          sortState.dir = sortState.dir === "asc" ? "desc" : "asc";
+        } else {
+          sortState = { key, dir: key === "name" ? "asc" : "desc" };
+        }
+        sortRows();
+        updateSortIndicators();
+      });
+    });
+
+    updateSortIndicators();
+  }
+</script>

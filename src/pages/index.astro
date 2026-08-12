@@ -85,15 +85,15 @@ const universityOptions = rankedUniversities();
         class="mt-4 text-gray-600 max-w-2xl leading-relaxed list-disc pl-5 space-y-1"
       >
         <li>
-          Berikut adalah data rekap jumlah siswa yang diterima lewat jalur
-          SNBP dari <strong class="text-gray-900"
-            >{summaries.length} SMA</strong
-          >, dikumpulkan dari pengumuman resmi tiap sekolah di Instagram dan
-          sumber publik lainnya.
+          Berikut adalah data rekap jumlah siswa yang diterima lewat jalur SNBP
+          dari <strong class="text-gray-900">{summaries.length} SMA</strong>,
+          dikumpulkan dari pengumuman resmi tiap sekolah di Instagram dan sumber
+          publik lainnya.
         </li>
         <li>
-          Lihat <a href={`${SITE.pathPrefix}/about`} class="underline hover:text-gray-900"
-            >ceritanya</a
+          Lihat <a
+            href={`${SITE.pathPrefix}/about`}
+            class="underline hover:text-gray-900">ceritanya</a
           > mengapa website ini dibuat dan lebih detil Tentang Data dalam website
           ini.
         </li>
@@ -101,7 +101,10 @@ const universityOptions = rankedUniversities();
           SITE.submitEnabled && (
             <li>
               Ingin menambahkan atau mengoreksi data? Lihat halaman{" "}
-              <a href={`${SITE.pathPrefix}/submit`} class="underline hover:text-gray-900">
+              <a
+                href={`${SITE.pathPrefix}/submit`}
+                class="underline hover:text-gray-900"
+              >
                 Kontribusi Data
               </a>
               .
@@ -147,8 +150,7 @@ const universityOptions = rankedUniversities();
             stroke="currentColor"
             stroke-width="1.5"
             stroke-linecap="round"
-            stroke-linejoin="round"
-          />
+            stroke-linejoin="round"></path>
         </svg>
       </div>
     </section>
@@ -175,11 +177,11 @@ const universityOptions = rankedUniversities();
               YEARS.map((y) => (
                 <th
                   scope="col"
-                  class="text-center font-mono text-xs uppercase tracking-wider text-gray-500 py-2 px-2 w-16"
+                  class="text-right font-mono text-xs uppercase tracking-wider text-gray-500 py-2 px-2 w-16"
                 >
                   <button
                     type="button"
-                    class="sort-btn inline-flex items-center gap-1 cursor-pointer hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-1 rounded"
+                    class="sort-btn inline-flex items-center gap-1 justify-end cursor-pointer hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-1 rounded"
                     data-sort-key={y}
                   >
                     {y}{" "}
@@ -193,7 +195,7 @@ const universityOptions = rankedUniversities();
             }
             <th
               scope="col"
-              class="text-left font-mono text-xs uppercase tracking-wider text-gray-500 py-2 pl-3 w-56"
+              class="text-right font-mono text-xs uppercase tracking-wider text-gray-500 py-2 pl-3 w-24"
               >Tren</th
             >
           </tr>
@@ -220,11 +222,11 @@ const universityOptions = rankedUniversities();
                   </span>
                 </td>
                 {YEARS.map((y) => (
-                  <td class="year-cell text-center py-3 px-2 tabular-nums">
+                  <td class="year-cell text-right py-3 px-2 tabular-nums">
                     {s.accepted[y] ?? <span class="text-gray-300">–</span>}
                   </td>
                 ))}
-                <td class="trend-cell py-3 pl-3">
+                <td class="trend-cell text-right py-3 pl-3">
                   <Sparkline
                     values={YEARS.map((y) => s.accepted[y] ?? null)}
                     label={`Tren jumlah lolos ${s.name}: ${YEARS.map((y) => `${y} ${s.accepted[y] ?? "tidak ada data"}`).join(", ")}`}
@@ -247,8 +249,8 @@ const universityOptions = rankedUniversities();
       </h2>
       <ul class="space-y-2 text-gray-600 list-disc pl-5 max-w-2xl">
         <li>
-          Angka "lolos" adalah total siswa diterima lewat SNBP di tahun
-          tersebut, sesuai pengumuman yang dipublikasikan sekolah.
+          Angka yang tertera di table adalah total siswa diterima lewat SNBP di
+          tahun tersebut, sesuai pengumuman yang dipublikasikan sekolah.
         </li>
         <li>
           Data dikumpulkan manual dan bisa saja ada yang keliru atau kurang
@@ -260,9 +262,12 @@ const universityOptions = rankedUniversities();
         {
           SITE.submitEnabled && (
             <li>
-              Melihat data yang keliru atau punya data yang lebih
-              lengkap/lebih baru?{" "}
-              <a href={`${SITE.pathPrefix}/submit`} class="underline hover:text-gray-900">
+              Melihat data yang keliru atau punya data yang lebih lengkap/lebih
+              baru?{" "}
+              <a
+                href={`${SITE.pathPrefix}/submit`}
+                class="underline hover:text-gray-900"
+              >
                 Kontribusi Data
               </a>{" "}
               ke kami, nanti akan kami tambahkan ke websitenya.
@@ -318,7 +323,7 @@ const universityOptions = rankedUniversities();
     } else {
       inner = `<text x="${SPARK_W / 2}" y="${SPARK_H / 2 + 3}" text-anchor="middle" font-size="10" fill="#d1d5db">–</text>`;
     }
-    return `<svg width="${SPARK_W}" height="${SPARK_H}" viewBox="0 0 ${SPARK_W} ${SPARK_H}" role="img" aria-label="${label.replace(/"/g, "&quot;")}">${inner}</svg>`;
+    return `<svg class="ml-auto" width="${SPARK_W}" height="${SPARK_H}" viewBox="0 0 ${SPARK_W} ${SPARK_H}" role="img" aria-label="${label.replace(/"/g, "&quot;")}">${inner}</svg>`;
   }
 
   const searchInput = document.getElementById("search");
@@ -388,7 +393,7 @@ const universityOptions = rankedUniversities();
       if (key === sortState.key) {
         th.setAttribute(
           "aria-sort",
-          sortState.dir === "asc" ? "ascending" : "descending"
+          sortState.dir === "asc" ? "ascending" : "descending",
         );
         indicator.textContent = sortState.dir === "asc" ? "↓" : "↑";
       } else {
