@@ -54,6 +54,20 @@ know the per-university split" (`hasBreakdown: false`, `accepted` may still hold
 Never collapse the second case into a zero — it misrepresents unknown data as "didn't get in
 anywhere."
 
+## Deployment
+
+Deployed to GitHub Pages via `.github/workflows/deploy.yml` on every push to `main`. The site
+lives at its own custom domain, `pilihsma.ryanalvita.com` (not a `ryanalvita.com/pilih-sma/`
+project-page path anymore). Three parts have to stay in sync if this ever changes:
+
+- DNS: CNAME record `pilihsma.ryanalvita.com` -> `ryanalvita.github.io`.
+- GitHub repo Settings -> Pages -> "Custom domain" = `pilihsma.ryanalvita.com`, with "Enforce
+  HTTPS" ticked once DNS verification passes (can take a while to propagate).
+- Code: `public/CNAME` (must contain `pilihsma.ryanalvita.com` and stay committed, or GitHub
+  Pages resets the custom domain on the next deploy) and `src/config/site.mjs`
+  (`url: "https://pilihsma.ryanalvita.com"`, `base: "/"` — `astro.config.mjs` reads `base` from
+  here). If `base` and the actual serving path ever disagree, assets/links break.
+
 ## Architecture
 
 - `src/data/index.ts` is the single data-access layer — all pages go through it (`schoolSummaries`,

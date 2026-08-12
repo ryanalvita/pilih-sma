@@ -50,20 +50,5 @@ npm run preview   # preview hasil build
 
 ## Deploy
 
-Situs ini di-deploy ke **GitHub Pages** lewat GitHub Actions
-(`.github/workflows/deploy.yml`), sama seperti `bank-statement-parser`.
-
-1. Setiap `git push` ke `main` otomatis men-trigger workflow: build situs (`withastro/action`)
-   lalu deploy ke GitHub Pages (`actions/deploy-pages`).
-2. Di GitHub repo settings -> Pages, "Source" harus di-set ke **GitHub Actions** (bukan
-   "Deploy from a branch").
-3. **Sementara tanpa custom domain**: kolom "Custom domain" di Pages settings dikosongkan,
-   jadi situsnya nempel di URL akun (`https://ryanalvita.com/pilih-sma/`, karena akun ini
-   sudah punya domain apex `ryanalvita.com` terpasang di GitHub Pages-nya) — bukan
-   `https://ryanalvita.github.io/pilih-sma/`. `src/config/site.mjs` (`url` + `base`) dan
-   `astro.config.mjs` (`base: SITE.base`) sudah disesuaikan untuk path `/pilih-sma/` ini,
-   supaya semua asset/link nggak patah.
-4. Kalau nanti mau pindah ke domain sendiri (mis. `pilihsma.ryanalvita.com`): tambahkan
-   CNAME record di DNS ke `ryanalvita.github.io`, isi custom domain di Pages settings,
-   tambahkan lagi `public/CNAME`, lalu ubah `url` ke domain itu dan `base` jadi `"/"`
-   di `src/config/site.mjs`.
+Situs ini di-deploy otomatis ke **pilihsma.ryanalvita.com** lewat GitHub Actions setiap
+`git push` ke `main` (`.github/workflows/deploy.yml`).

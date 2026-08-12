@@ -26,7 +26,10 @@ const {
 
 // Construct full URLs
 const currentPath = Astro.url.pathname;
-const canonicalPath = canonicalURL || currentPath;
+// `Astro.url.pathname` is `base + route`, so with `base: "/"` this collapses to a
+// leading "//" (e.g. homepage -> "//"), which `new URL()` parses as a protocol-relative
+// URL with an empty host and throws. Collapse a doubled leading slash back to one.
+const canonicalPath = (canonicalURL || currentPath).replace(/^\/{2,}/, "/");
 const siteURL = new URL(canonicalPath, SITE.url);
 
 // Handle image URLs - support both absolute URLs and relative paths
