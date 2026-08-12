@@ -1,0 +1,64 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { Icon } from "astro-icon/components";
+import { SITE } from "../config/site.mjs";
+---
+
+<Layout
+  title="Masukan"
+  description="Laporkan bug, kasih saran fitur, atau sekadar sapa soal PilihSMA."
+  canonicalURL={`${SITE.base}/feedback`}
+>
+  <Header />
+  <main id="main-content" role="main" class="max-w-2xl mx-auto px-4 py-10">
+    <a href={`${SITE.base}/`} class="text-sm text-gray-500 hover:text-amber-700"
+      >← Beranda</a
+    >
+
+    <header class="mt-4 mb-8">
+      <p
+        class="font-mono text-xs uppercase tracking-widest text-amber-700 mb-2"
+      >
+        Masukan
+      </p>
+      <h1 class="text-3xl font-bold text-gray-900 tracking-tight">
+        Ada masukan atau menemukan bug?
+      </h1>
+    </header>
+
+    <p class="text-gray-600 leading-relaxed">
+      Kalau kamu menemukan bug, punya saran fitur, atau sekadar mau cerita
+      soal pengalaman pakai PilihSMA, saya senang mendengarnya. Kirim lewat
+      email atau GitHub Issues di bawah.
+    </p>
+    <p class="mt-4 text-gray-600 leading-relaxed">
+      Untuk data sekolah yang salah atau belum lengkap, sebaiknya lewat
+      halaman <a
+        href={`${SITE.base}/submit`}
+        class="underline hover:text-amber-700">Kontribusi Data</a
+      >, supaya langsung masuk proses peninjauan.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a
+        href="mailto:ryanalvita@gmail.com"
+        class="inline-flex items-center gap-2 rounded-lg bg-gray-900 px-4 py-2 text-white font-medium hover:bg-amber-700 transition-colors"
+      >
+        <Icon name="tabler:mail" class="h-5 w-5" aria-hidden="true" />
+        Kirim email
+      </a>
+      <a
+        href="https://github.com/ryanalvita/pilih-sma/issues"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 rounded-lg border border-gray-300 px-4 py-2 text-gray-900 font-medium hover:bg-gray-50 transition-colors"
+      >
+        <Icon name="tabler:brand-github" class="h-5 w-5" aria-hidden="true" />
+        Buka GitHub Issues
+      </a>
+    </div>
+  </main>
+  <Footer />
+</Layout>
