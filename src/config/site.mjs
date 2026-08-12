@@ -14,10 +14,10 @@ export const SITE = {
   ogImage: "/og-image.png", // Add this image to your public folder
   // Web3Forms: Get your free access key from https://web3forms.com
   // Leave empty to disable the "Kirim Data" form submission
-  web3formsAccessKey: "", // e.g., "YOUR_ACCESS_KEY_HERE"
+  web3formsAccessKey: "9d223da2-93a6-467e-940a-acc4f208781a",
   // Set to true to show "Kontribusi Data" links/nav (Header, homepage CTAs)
   // and make the /submit page reachable from the rest of the site. The
   // /submit page itself always exists; this just controls whether anything
   // points to it. Flip back to true whenever the feature is ready to launch.
-  submitEnabled: false,
+  submitEnabled: true,
 };

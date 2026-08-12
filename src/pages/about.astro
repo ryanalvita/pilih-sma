@@ -60,12 +60,11 @@ import { SITE } from "../config/site.mjs";
             Karena ternyata cukup berguna untuk keluarga saya, saya pikir siswa
             atau orang tua murid lain mungkin butuh hal yang sama. Jadi saya
             buka jadi website publik biar bisa dipakai siapa saja, bukan cuma
-            keluarga saya. Selain itu, dengan dibuka ke publik, orang lain juga
-            bisa berkontribusi data yang belum saya masukkan melalui halaman <a
+            keluarga saya. Selain itu, orang lain jadi bisa ikut bantu isi data
+            yang belum saya masukkan lewat halaman <a
               href={`${SITE.base}/submit`}
               class="underline hover:text-amber-700">Kontribusi Data</a
-            >, supaya datanya lebih lengkap dan bermanfaat untuk lebih banyak
-            orang.
+            >.
           </p>
         </dd>
       </div>
@@ -77,12 +76,11 @@ import { SITE } from "../config/site.mjs";
         </dt>
         <dd class="text-gray-600 leading-relaxed">
           <p>
-            Cakupannya baru Kota Bandung murni karena di situ proyeknya dimulai,
-            bukan karena sengaja dibatasi. Harapan saya, website ini bisa
-            berkembang dengan lebih banyak sekolah di Bandung, lebih banyak
-            cakupan tahunnya, atau lebih luas lagi ke kota selain Kota Bandung.
-            Semua itu bergantung pada data yang akan masuk, jadi kalau kamu
-            punya datanya, bantuanmu bisa sangat bermanfaat untuk kita semua.
+            Cakupannya baru Kota Bandung karena di situ proyeknya dimulai, bukan
+            karena sengaja dibatasi. Harapan saya, website ini bisa berkembang
+            dengan lebih banyak sekolah, lebih banyak cakupan tahun, atau meluas
+            ke kota lain. Itu semua tergantung data yang masuk, jadi kalau kamu
+            punya datanya, kirim lewat halaman kontribusi.
           </p>
         </dd>
       </div>
@@ -100,18 +98,17 @@ import { SITE } from "../config/site.mjs";
           </p>
           <ol class="list-decimal pl-5 space-y-2">
             <li>
-              Kirim data dan menyertakan sumber data yang kamu dapatkan
-              (misalnya: link Instagram sekolah untuk pengumuman jumlah SNBP).
+              Kirim data beserta sumbernya (misalnya link Instagram sekolah yang
+              mengumumkan jumlah SNBP).
             </li>
             <li>
               Kiriman itu <strong class="text-gray-900"
                 >ditinjau manual dulu</strong
-              >, dicocokkan dengan sumbernya, supaya angkanya tetap bisa
-              dipertanggungjawabkan.
+              >, dicocokkan dengan sumbernya.
             </li>
             <li>
-              Kalau sudah sesuai, datanya ditambahkan ke database dan langsung
-              muncul di halaman sekolah terkait.
+              Kalau sudah cocok, datanya ditambahkan dan langsung muncul di
+              halaman sekolah terkait.
             </li>
           </ol>
         </dd>
@@ -124,26 +121,18 @@ import { SITE } from "../config/site.mjs";
         </dt>
         <dd class="text-gray-600 leading-relaxed space-y-3">
           <p>
-            Ada banyak cara untuk menilai "sekolah mana yang bagus": nilai
-            rata-rata UTBK, jumlah lolos SNBP, jumlah lolos SNBT, dan lainnya.
-            Tidak ada satu angka pun yang bisa mewakili semuanya, dan situs ini
-            juga tidak mengklaim jadi yang paling akurat.
+            Ada banyak cara menilai "sekolah mana yang bagus", dan situs ini
+            tidak mengklaim jadi yang paling akurat. Saya pakai jumlah lolos
+            SNBP per universitas karena kebanyakan orang yang sedang memilih SMA
+            biasanya sudah punya universitas incaran, jadi yang lebih relevan
+            itu "apakah sekolah ini biasanya lolos ke universitas incaran saya",
+            bukan sekadar "sekolah ini bagus atau tidak".
           </p>
           <p>
-            Alasan saya memakai jumlah lolos SNBP per universitas cukup praktis,
-            yaitu karena kebanyakan orang yang sedang milih SMA biasanya sudah
-            punya universitas incaran, sehingga yang lebih relevan buat mereka
-            bukan "sekolah ini bagus atau tidak secara umum", tapi "apakah
-            sekolah ini biasanya berhasil meloloskan siswa ke universitas yang
-            saya incar".
-          </p>
-          <p>
-            SNBP juga dipilih dibanding SNBT karena jalurnya lebih terkait ke
-            sekolah asal (nilai rapor dan reputasi sekolah di mata PTN),
-            sementara SNBT lebih dipengaruhi usaha dan kemampuan individu siswa
-            lewat tes (UTBK). Karena itu, angka SNBP menurut saya lebih bisa
-            dipakai sebagai salah satu indikator "kualitas" sekolah dibanding
-            performa tiap siswa secara individu.
+            SNBP juga lebih terkait ke sekolah asal (nilai rapor, reputasi
+            sekolah), sementara SNBT lebih ke usaha dan kemampuan tiap siswa
+            lewat tes UTBK. Jadi angka SNBP terasa lebih cocok dipakai sebagai
+            indikator sekolah, dibanding performa siswa masing-masing.
           </p>
         </dd>
       </div>
@@ -221,14 +210,13 @@ import { SITE } from "../config/site.mjs";
               class="underline hover:text-amber-700"
               target="_blank"
               rel="noopener noreferrer">Astro Base</a
-            >, dan proses pengembangannya — mulai dari data pipeline, tiap
-            halaman, sampai perbaikan bug — dikerjakan bersama model <strong
-              class="text-gray-900">Claude</strong
-            > dari Anthropic, khususnya <strong class="text-gray-900"
-              >Claude Sonnet</strong
-            > dan <strong class="text-gray-900">Claude Haiku</strong>, lewat
-            Claude Code. Terima kasih dan kredit untuk keduanya atas
-            bantuannya membangun situs ini.
+            >, dan proses pengembangannya dikerjakan bersama model <a
+              href="https://claude.ai"
+              class="underline hover:text-amber-700"
+              target="_blank"
+              rel="noopener noreferrer">Claude</a
+            >, khususnya Claude Sonnet dan Claude Haiku. Terima kasih dan
+            kredit untuk keduanya atas bantuannya membangun situs ini.
           </p>
         </dd>
       </div>
