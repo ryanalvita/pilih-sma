@@ -12,7 +12,7 @@ import { SITE } from "../config/site.mjs";
     aria-label="Main navigation"
   >
     <a
-      href={`${SITE.base}/`}
+      href={`${SITE.pathPrefix}/`}
       class="flex items-baseline gap-2 hover:opacity-80 transition-opacity"
       aria-label="PilihSMA - Beranda"
     >
@@ -38,10 +38,10 @@ import { SITE } from "../config/site.mjs";
     <ul class="hidden md:flex items-center gap-6" role="list">
       <li>
         <a
-          href={`${SITE.base}/about`}
+          href={`${SITE.pathPrefix}/about`}
           class="text-gray-600 hover:text-gray-900 transition-colors"
           aria-current={
-            Astro.url.pathname === `${SITE.base}/about/` ? "page" : undefined
+            Astro.url.pathname === `${SITE.pathPrefix}/about/` ? "page" : undefined
           }
         >
           Tentang Data
@@ -51,10 +51,10 @@ import { SITE } from "../config/site.mjs";
         SITE.submitEnabled && (
           <li>
             <a
-              href={`${SITE.base}/submit`}
+              href={`${SITE.pathPrefix}/submit`}
               class="px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-amber-700 transition-colors"
               aria-current={
-                Astro.url.pathname === `${SITE.base}/submit/`
+                Astro.url.pathname === `${SITE.pathPrefix}/submit/`
                   ? "page"
                   : undefined
               }
@@ -77,7 +77,7 @@ import { SITE } from "../config/site.mjs";
     <ul class="flex flex-col py-4" role="list">
       <li>
         <a
-          href={`${SITE.base}/about`}
+          href={`${SITE.pathPrefix}/about`}
           class="block px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors"
           role="menuitem"
         >
@@ -88,7 +88,7 @@ import { SITE } from "../config/site.mjs";
         SITE.submitEnabled && (
           <li>
             <a
-              href={`${SITE.base}/submit`}
+              href={`${SITE.pathPrefix}/submit`}
               class="block px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors"
               role="menuitem"
             >

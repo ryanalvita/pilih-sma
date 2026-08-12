@@ -8,11 +8,11 @@ import { SITE } from "../config/site.mjs";
 <Layout
   title="Tentang Data"
   description="Cerita di balik PilihSMA dan metodologi pengumpulan datanya."
-  canonicalURL={`${SITE.base}/about`}
+  canonicalURL={`${SITE.pathPrefix}/about`}
 >
   <Header />
   <main id="main-content" role="main" class="max-w-2xl mx-auto px-4 py-10">
-    <a href={`${SITE.base}/`} class="text-sm text-gray-500 hover:text-amber-700"
+    <a href={`${SITE.pathPrefix}/`} class="text-sm text-gray-500 hover:text-amber-700"
       >← Beranda</a
     >
 
@@ -62,7 +62,7 @@ import { SITE } from "../config/site.mjs";
             buka jadi website publik biar bisa dipakai siapa saja, bukan cuma
             keluarga saya. Selain itu, orang lain jadi bisa ikut bantu isi data
             yang belum saya masukkan lewat halaman <a
-              href={`${SITE.base}/submit`}
+              href={`${SITE.pathPrefix}/submit`}
               class="underline hover:text-amber-700">Kontribusi Data</a
             >.
           </p>
@@ -92,7 +92,7 @@ import { SITE } from "../config/site.mjs";
         <dd class="text-gray-600 leading-relaxed">
           <p class="mb-2">
             Kamu bisa berkontribusi data melalui halaman <a
-              href={`${SITE.base}/submit`}
+              href={`${SITE.pathPrefix}/submit`}
               class="underline hover:text-amber-700">Kontribusi Data</a
             >:
           </p>
@@ -160,7 +160,7 @@ import { SITE } from "../config/site.mjs";
             Kami sudah mengecek ke Instagram sekolah atau sumber informasi
             publik lainnya, tapi belum menemukan datanya. Ini yang paling bisa
             kamu bantu lewat halaman <a
-              href={`${SITE.base}/submit`}
+              href={`${SITE.pathPrefix}/submit`}
               class="underline hover:text-amber-700">Kontribusi Data</a
             >.
           </p>
@@ -192,7 +192,7 @@ import { SITE } from "../config/site.mjs";
           <p>
             Kalau kamu menemukan data yang salah, silakan kirim koreksinya
             melalui halaman <a
-              href={`${SITE.base}/submit`}
+              href={`${SITE.pathPrefix}/submit`}
               class="underline hover:text-amber-700">Kontribusi Data</a
             > lengkap dengan link sumber.
           </p>

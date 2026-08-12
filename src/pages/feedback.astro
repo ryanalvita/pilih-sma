@@ -9,11 +9,11 @@ import { SITE } from "../config/site.mjs";
 <Layout
   title="Masukan"
   description="Laporkan bug, kasih saran fitur, atau sekadar sapa soal PilihSMA."
-  canonicalURL={`${SITE.base}/feedback`}
+  canonicalURL={`${SITE.pathPrefix}/feedback`}
 >
   <Header />
   <main id="main-content" role="main" class="max-w-2xl mx-auto px-4 py-10">
-    <a href={`${SITE.base}/`} class="text-sm text-gray-500 hover:text-amber-700"
+    <a href={`${SITE.pathPrefix}/`} class="text-sm text-gray-500 hover:text-amber-700"
       >← Beranda</a
     >
 
@@ -36,7 +36,7 @@ import { SITE } from "../config/site.mjs";
     <p class="mt-4 text-gray-600 leading-relaxed">
       Untuk data sekolah yang salah atau belum lengkap, sebaiknya lewat
       halaman <a
-        href={`${SITE.base}/submit`}
+        href={`${SITE.pathPrefix}/submit`}
         class="underline hover:text-amber-700">Kontribusi Data</a
       >, supaya langsung masuk proses peninjauan.
     </p>
